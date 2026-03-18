@@ -3,6 +3,7 @@ import Home from "./Pages/Home";
 import AboutMe from "./Pages/AboutMe";
 import { MainLayout } from "./Layouts/mainLayout";
 import { MouseTracker } from "./Components/MouseTracker";
+import NotFound from "./Pages/NotFound";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" exact element={<Home />} />
           <Route path="/about" element={<AboutMe />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
