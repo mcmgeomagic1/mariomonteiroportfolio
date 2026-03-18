@@ -8,16 +8,14 @@ import grillImage from "../../../../Assets/grill.png";
 import {
   ProjectTitle,
   ProjectImageBox,
-  OvalGlow,
   HeroGradientImage,
   HeroGrillGraphs,
-  HorizontalSection,
   StickyContainer,
   HorizontalTrack,
-  Slide,
   ProjectsSection,
 } from "./styledProjects.styled";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Projects() {
   const sectionRef = useRef(null);
@@ -62,11 +60,13 @@ function Projects() {
                     {project.title}
                   </ProjectTitle>
                   <p>{project.description}</p>
-                  <Button
-                    type="primary"
-                    text="View project"
-                    icon={<FaArrowRightLong />}
-                  />
+                  <Link to={`/projects/${project.id}`}>
+                    <Button
+                      type="primary"
+                      text="View project"
+                      icon={<FaArrowRightLong />}
+                    />
+                  </Link>
                 </ProjectDiv>
                 <ProjectImageBox>
                   <img src={project.thumbnail} alt="project thumbnail" />

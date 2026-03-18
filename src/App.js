@@ -4,6 +4,7 @@ import AboutMe from "./Pages/AboutMe";
 import { MainLayout } from "./Layouts/mainLayout";
 import { MouseTracker } from "./Components/MouseTracker";
 import NotFound from "./Pages/NotFound";
+import ProjectDetails from "./Pages/ProjectDetails";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<MainLayout />}>
           <Route path="/" exact element={<Home />} />
           <Route path="/about" element={<AboutMe />} />
+          <Route path="projects/:id" element={<ProjectDetails />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
