@@ -2,26 +2,26 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import { CarouselBox } from "./styledCarrousell.styled";
 
-import carrousel1Image1 from "../../Assets/image1.png";
-import carrousel1Image2 from "../../Assets/image2.png";
-import carrousel1Image3 from "../../Assets/image3.png";
-import carrousel1Image4 from "../../Assets/image4.png";
-import carrousel1Image5 from "../../Assets/image5.png";
-import carrousel1Image6 from "../../Assets/image6.png";
+import carrousel1Image1 from "../../Assets/carousell-galery/image1.png";
+import carrousel1Image2 from "../../Assets/carousell-galery/image2.png";
+import carrousel1Image3 from "../../Assets/carousell-galery/image3.png";
+import carrousel1Image4 from "../../Assets/carousell-galery/image4.png";
+import carrousel1Image5 from "../../Assets/carousell-galery/image5.png";
+import carrousel1Image6 from "../../Assets/carousell-galery/image6.png";
 
-import carrousel2Image1 from "../../Assets/image7.png";
-import carrousel2Image2 from "../../Assets/image8.png";
-import carrousel2Image3 from "../../Assets/image9.png";
-import carrousel2Image4 from "../../Assets/image10.png";
-import carrousel2Image5 from "../../Assets/image11.png";
-import carrousel2Image6 from "../../Assets/image12.png";
+import carrousel2Image1 from "../../Assets/carousell-galery/image7.png";
+import carrousel2Image2 from "../../Assets/carousell-galery/image8.png";
+import carrousel2Image3 from "../../Assets/carousell-galery/image9.png";
+import carrousel2Image4 from "../../Assets/carousell-galery/image10.png";
+import carrousel2Image5 from "../../Assets/carousell-galery/image11.png";
+import carrousel2Image6 from "../../Assets/carousell-galery/image12.png";
 
-import carrousel3Image1 from "../../Assets/image13.png";
-import carrousel3Image2 from "../../Assets/image14.png";
-import carrousel3Image3 from "../../Assets/image15.png";
-import carrousel3Image4 from "../../Assets/image16.png";
-import carrousel3Image5 from "../../Assets/image17.png";
-import carrousel3Image6 from "../../Assets/image18.png";
+import carrousel3Image1 from "../../Assets/carousell-galery/image13.png";
+import carrousel3Image2 from "../../Assets/carousell-galery/image14.png";
+import carrousel3Image3 from "../../Assets/carousell-galery/image15.png";
+import carrousel3Image4 from "../../Assets/carousell-galery/image16.png";
+import carrousel3Image5 from "../../Assets/carousell-galery/image17.png";
+import carrousel3Image6 from "../../Assets/carousell-galery/image18.png";
 
 const imagesRow1 = [
   carrousel1Image1,

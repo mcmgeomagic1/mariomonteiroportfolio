@@ -1,5 +1,5 @@
-import { Link, Outlet } from "react-router-dom";
-import { Container, Section } from "../../styles/StyledCommon.styled";
+import { Link } from "react-router-dom";
+import { Container } from "../../styles/StyledCommon.styled";
 import { Logo } from "../Logo";
 import { NavbarSection } from "./styledNavBar.styled";
 

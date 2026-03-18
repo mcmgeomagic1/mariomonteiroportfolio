@@ -6,15 +6,14 @@ const GlobalStyles = createGlobalStyle`
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
+		list-style: none;
 	}
 
 	body,html {
-		width: 100%;
 		background: ${({ theme }) => theme.colors.mainPallet.background};
 		color: ${({ theme }) => theme.colors.mainPallet.standard.white};
 		font-size: 18px;
 		font-family: 'Roboto', sans-serif;
-		overflow-x: hidden;
     	font-weight: 400;
 		padding: 0px;
 
@@ -25,7 +24,6 @@ const GlobalStyles = createGlobalStyle`
 	}
 
 	#__next, #root{
-		height: auto;
 		background: ${({ theme }) => theme.colors.mainPallet.background};
 	}
 
@@ -40,8 +38,13 @@ const GlobalStyles = createGlobalStyle`
 		object-fit: cover;
 	}
 
-	h1, h3, h2{
-		
+	h1, h2, h3, h4, h5 {
+		font-family: 'Poppins', sans-serif;
+	}
+
+	h4 {
+		font-weight: 400;
+		letter-spacing: 0.25;
 	}
 
 	h1 {
@@ -49,6 +52,26 @@ const GlobalStyles = createGlobalStyle`
 		letter-spacing: -1.3px;
 		line-height: 105%;
 		margin-bottom: -.2em;
+		font-size: ${({ theme }) => theme.fontSize.Headline1};
+	}
+
+	h2{
+		font-size: ${({ theme }) => theme.fontSize.Headline2};
+		background: linear-gradient(
+    		to left,
+     		${({ theme }) => theme.colors.mainPallet.primary},
+    		${({ theme }) => theme.colors.mainPallet.secondary} 90%
+  		);
+    	background-clip: text;
+    	-webkit-background-clip: text;
+    	color: transparent;
+    	-webkit-text-fill-color: transparent;
+    	z-index: 10;
+
+    	@media (max-width: ${({ theme }) => theme.mobile}) {
+    		font-size: 270%;
+			line-height: 120%;
+  		}
 	}
 
 	main {
@@ -67,9 +90,10 @@ const GlobalStyles = createGlobalStyle`
 	
 	a {
 		text-decoration: none;
-		color: ${({ theme }) => theme.colors.mainPallet.standard.white};
 		cursor: pointer;
 	}
+
+	
 
 	button {
 		height: 62px;
@@ -94,7 +118,6 @@ const GlobalStyles = createGlobalStyle`
 		  height: 40px;
         }
 	}
-
-    `;
+`;
 
 export default GlobalStyles;

@@ -1,0 +1,164 @@
+import styled from "styled-components";
+
+export const ProjectDiv = styled.div`
+  height: 296px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 24px;
+  position: relative;
+  z-index: 1000;
+
+  h4 {
+    text-transform: uppercase;
+  }
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    margin-top: 5em;
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    margin-top: 6.1em;
+    grid-gap: 14px;
+  }
+`;
+export const ProjectTitle = styled.h2`
+  text-align: center;
+  background: linear-gradient(
+    to left,
+    ${(props) => props.color},
+    ${({ theme }) => theme.colors.mainPallet.secondary} 70%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  z-index: 10;
+  text-transform: uppercase;
+`;
+
+export const ProjectImageBox = styled.div`
+  width: 100%;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  z-index: 1000;
+  bottom: 0;
+  left: 0;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2em 2em 0 2em;
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    height: 37%;
+    padding: 1em 1em 0 1em;
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    height: 20%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+    @media (max-width: ${({ theme }) => theme.tablet}) {
+      object-fit: fill;
+    }
+  }
+`;
+
+export const OvalGlow = styled.div`
+  position: relative;
+  width: 906.71px;
+  height: 1440.62px;
+  border-radius: 50% / 60%;
+  transform: rotate(1.6deg);
+  background: ${({ theme }) => theme.colors.mainPallet.background};
+  filter: blur(80px);
+  position: absolute;
+  top: -20%;
+  right: 32.3%;
+  z-index: -2;
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    right: 18.3%;
+  }
+`;
+
+export const HeroGradientImage = styled.img`
+  width: 749px;
+  height: 802px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+`;
+
+export const HeroGrillGraphs = styled.img`
+  width: 652px;
+  height: 565px;
+  object-fit: cover;
+  position: absolute;
+  top: 15%;
+  right: 0;
+  z-index: 0;
+`;
+
+export const HorizontalSection = styled.section`
+  position: relative;
+  height: ${({ height }) => (height ? `${height}px` : "100vh")};
+  border: 2px solid red;
+  z-index: 9;
+`;
+
+export const StickyContainer = styled.div`
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+`;
+
+export const HorizontalTrack = styled.div`
+  display: flex;
+  height: 100%;
+  will-change: transform;
+
+  section {
+    min-width: 100vw;
+    height: 100vw;
+  }
+`;
+
+
+export const Slide = styled.div`
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+`;
+
+export const ProjectsSection = styled.div`
+  position: relative;
+  height: ${({ slides }) => slides * 100}vh;
+  z-index: 9;
+`
+
+
+
+

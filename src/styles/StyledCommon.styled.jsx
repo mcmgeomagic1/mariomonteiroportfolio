@@ -2,12 +2,21 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   width: 100%;
-  padding: ${(props) => (props.paddingTop ? props.paddingTop : 0)}px 0px;
+  position: relative;
+  z-index: 1;
+  padding: ${(props) => (props.padding ? props.padding : "0px 0px 0px 0px")};
+  height: ${(props) => (props.height ? props.height : "auto")};
+  background: ${(props) => (props.background ? props.background : "auto")};
+  text-align: ${(props) => (props.textAlign ? props.textAlign : "left")};
 `;
 
 export const Container = styled.div`
   max-width: 1170px;
   margin: 0 auto;
+  position: ${(props) => (props.position ? props.position : "auto")};
+  padding: ${(props) => (props.padding ? props.padding : "0px 0px 0px 0px")};
+  height: ${(props) => (props.height ? props.height : "auto")};
+  text-align: ${(props) => (props.textAlign ? props.textAlign : "left")};
 
   @media (max-width: ${({ theme }) => theme.desktop}) {
     width: 1100px;

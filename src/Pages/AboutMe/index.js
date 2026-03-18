@@ -3,7 +3,7 @@ import { Text } from "./styledHome.styled";
 
 function AboutMe() {
   return (
-    <Section paddingTop={60}>
+    <Section padding="100px 0px">
       <Container>
         <h1>About Page</h1>
         <p>This is the about page.</p>

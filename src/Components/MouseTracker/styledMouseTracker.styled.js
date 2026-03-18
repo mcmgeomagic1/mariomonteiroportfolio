@@ -20,11 +20,7 @@ export const TrackerCircle = styled(motion.div)`
   transition: all 0.15s ease;
 
   /* default glow */
-  background: radial-gradient(
-    circle,
-    ${({ theme }) => theme.colors.mainPallet.primary} 70%,
-    ${({ theme }) => theme.colors.mainPallet.secondary} 0%
-  );
+  background: white;
 
   filter: blur(70px);
 

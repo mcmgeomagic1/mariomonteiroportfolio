@@ -4,8 +4,8 @@ export const CarouselBox = styled.div`
   width: 886px;
   height: auto;
   position: absolute;
-  top: 63%;
-  transform: translateY(-63%);
+  top: 60%;
+  transform: translateY(-60%);
   right: 0;
   z-index: 3;
 
