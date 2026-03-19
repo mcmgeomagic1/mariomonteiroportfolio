@@ -5,6 +5,8 @@ export const FlexBox = styled.div`
   display: flex;
   grid-gap: 2em;
   justify-content: space-between;
+  position: relative;
+  z-index: 99;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column-reverse;
@@ -56,7 +58,7 @@ export const HeroText = styled(motion.h1)`
   }
 `;
 
-export const Image = styled.img`
+export const Image = styled(motion.img)`
   width: 402px;
   height: 518px;
   box-shadow: -12px -12px 0px ${({ theme }) => theme.colors.mainPallet.primary};
@@ -88,5 +90,58 @@ export const ButtonWrapper = styled(motion.div)`
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     justify-content: center;
+  }
+`;
+
+export const HeroGradientImage = styled.img`
+  width: 1149px;
+  height: 1202px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 349px;
+    height: 502px;
+  }
+`;
+
+export const HeroGrillGraphs = styled.img`
+  width: 652px;
+  height: 765px;
+  object-fit: cover;
+  position: absolute;
+  top: 6%;
+  right: 0;
+  z-index: 0;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 352px;
+    height: 465px;
+  }
+`;
+
+export const OvalGlow = styled.div`
+  position: relative;
+  width: 906.71px;
+  height: 1440.62px;
+  border-radius: 50% / 60%;
+  transform: rotate(1.6deg);
+  background: ${({ theme }) => theme.colors.mainPallet.background};
+  filter: blur(80px);
+  position: absolute;
+  top: -20%;
+  right: 32.3%;
+  z-index: 3;
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    right: 18.3%;
+  }
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    top: -20%;
+    right: 32.3%;
   }
 `;

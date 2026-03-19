@@ -11,8 +11,13 @@ import {
   Image,
   ButtonWrapper,
   HeroText,
+  HeroGradientImage,
+  HeroGrillGraphs,
+  OvalGlow,
 } from "./styledAboutMe.styled";
 import myImage from "../../Assets/mariomonteirophoto.png";
+import gradientImage from "../../Assets/Gradien-graph-bg.png";
+import grillImage from "../../Assets/grill.png";
 
 function AboutMe() {
   return (
@@ -59,9 +64,25 @@ function AboutMe() {
               />
             </ButtonWrapper>
           </HeroSeactionBox>
-          <Image src={myImage} alt="mario monteiro photo" />
+          <Image
+            src={myImage}
+            alt="mario monteiro photo"
+            initial={{ opacity: 0, left: 20 }}
+            whileInView={{
+              opacity: 1,
+              transition: {
+                delay: 0.3,
+                duration: 0.4,
+                ease: "easeInOut",
+              },
+            }}
+            viewport={{ once: true }}
+          />
         </FlexBox>
       </Container>
+      <OvalGlow />
+      <HeroGradientImage src={gradientImage} alt="Hero Image" />
+      <HeroGrillGraphs src={grillImage} alt="Hero Image" />
     </HeroSectionSection>
   );
 }
