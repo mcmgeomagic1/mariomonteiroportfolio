@@ -1,20 +1,34 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-import GlobalStyles from "./styles/globals";
 import { ThemeProvider } from "styled-components";
-import Theme from "./Themes/themes";
+import GlobalStyles from "./styles/globals";
+
+import { ThemeProviderWrapper, useThemeContext } from "./Context/ThemeContext";
+
+function InnerApp() {
+  const { theme } = useThemeContext();
+
+  return (
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <App />
+    </ThemeProvider>
+  );
+}
+
+function Root() {
+  return (
+    <React.StrictMode>
+      <BrowserRouter>
+        <ThemeProviderWrapper>
+          <InnerApp />
+        </ThemeProviderWrapper>
+      </BrowserRouter>
+    </React.StrictMode>
+  );
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <ThemeProvider theme={Theme}>
-        <GlobalStyles />
-        <App />
-      </ThemeProvider>
-    </BrowserRouter>
-  </React.StrictMode>,
-);
+root.render(<Root />);

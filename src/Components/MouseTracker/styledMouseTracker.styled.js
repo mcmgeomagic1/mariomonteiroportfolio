@@ -20,7 +20,7 @@ export const TrackerCircle = styled(motion.div)`
   transition: all 0.15s ease;
 
   /* default glow */
-  background: white;
+  background: ${({ theme }) => theme.colors.mainPallet.primary};
 
   filter: blur(70px);
 

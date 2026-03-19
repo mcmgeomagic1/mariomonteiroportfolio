@@ -26,7 +26,10 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
   const theme = useTheme();
   return (
-    <Section padding="100px 0px 30px 0" background="rgba(255, 255, 255, 0.05)">
+    <Section
+      padding="100px 0px 30px 0"
+      background={theme.colors.mainPallet.footer}
+    >
       <Container>
         <FooterWrapper>
           <FooterContent>
@@ -103,22 +106,23 @@ export const Footer = () => {
                   <NavTitle>Projects</NavTitle>
                   <NavList>
                     <NavItem>
-                      <NavLink href="#project1">Easepaycar</NavLink>
+                      <Link to="projects/1">Easepaycar</Link>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#project2">Lucky Dube</NavLink>
+                      <Link to="projects/2">Mirempet</Link>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#project1">Marvel App</NavLink>
+                      <Link to="projects/3">Marvel App</Link>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#project2">Beauty Embassade</NavLink>
+                      <Link to="projects/4">Beauty Embassade</Link>
+                    </NavItem>
+
+                    <NavItem>
+                      <Link to="projects/5">Monocard</Link>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="#project1">Mirempet</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="#project2">Monocard</NavLink>
+                      <Link to="projects/6">Lucky Dube</Link>
                     </NavItem>
                   </NavList>
                 </NavColumn>

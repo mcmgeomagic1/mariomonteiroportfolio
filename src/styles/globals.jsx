@@ -18,19 +18,26 @@ const GlobalStyles = createGlobalStyle`
 		padding: 0px;
 
 		@media (max-width: ${({ theme }) => theme.mobile}) {
-    		font-size: 14px;
+    		font-size: 13px;
+  		}
+
+		@media (max-width: ${({ theme }) => theme.smallerDevices}) {
+    		font-size: 10px;
   		}
 	
 	}
 
-	#__next, #root{
-		background: ${({ theme }) => theme.colors.mainPallet.background};
-	}
+	
 
 	p {
 		line-height: 170%;
 		letter-spacing: 0.5px;
 		opacity: .7;
+
+        @media (max-width: ${({ theme }) => theme.mobile}) {
+			line-height: 2;
+  		}
+
 	}
 
 	img{
@@ -42,9 +49,20 @@ const GlobalStyles = createGlobalStyle`
 		font-family: 'Poppins', sans-serif;
 	}
 
-	h4 {
+
+
+	h3 {
 		font-weight: 400;
 		letter-spacing: 0.25;
+		font-size: ${({ theme }) => theme.fontSize.Headline3};
+
+		@media (max-width: ${({ theme }) => theme.tablet}) {
+			font-size: 120%;
+		}
+	}
+
+	h4 {
+		font-weight: 400;
 	}
 
 	h1 {
@@ -86,6 +104,10 @@ const GlobalStyles = createGlobalStyle`
 	nav {
 		display: flex;
 		grid-gap: 2em;
+
+		@media (max-width: ${({ theme }) => theme.mobile}) {
+            display: none;
+        }
 	}
 	
 	a {
@@ -117,6 +139,7 @@ const GlobalStyles = createGlobalStyle`
 		@media (max-width: ${({ theme }) => theme.mobile}) {
           font-size: ${({ theme }) => theme.fontSize.buttonText};
 		  height: 40px;
+		  padding: 0px 14px;
         }
 	}
 `;

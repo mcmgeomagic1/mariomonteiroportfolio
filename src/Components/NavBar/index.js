@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Container } from "../../styles/StyledCommon.styled";
 import { Logo } from "../Logo";
-import { NavbarSection } from "./styledNavBar.styled";
+import { NavbarSection, StyledNavLink } from "./styledNavBar.styled";
 
 export const Navbar = () => {
   return (
@@ -10,10 +10,10 @@ export const Navbar = () => {
         <main>
           <Logo />
           <nav>
-            <Link to="/">Home</Link>
-            <Link to="/">Projects</Link>
-            <Link to="/about">About Me</Link>
-            <Link to="/">Contact Me</Link>
+            <StyledNavLink to="/">Home</StyledNavLink>
+            <StyledNavLink to="/projects">Projects</StyledNavLink>
+            <StyledNavLink to="/about">About Me</StyledNavLink>
+            <StyledNavLink to="/contact">Contact Me</StyledNavLink>
           </nav>
         </main>
       </Container>

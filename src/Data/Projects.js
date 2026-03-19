@@ -7,7 +7,7 @@ import thumb5 from "../Assets/projects/project5/thumbnail.png";
 import thumb6 from "../Assets/projects/project6/thumbnail.png";
 
 // -------------------- COVERS --------------------
-import cover1 from "../Assets/projects/project1/cover.png";
+import cover1 from "../Assets/projects/project1/cover.svg";
 import cover2 from "../Assets/projects/project2/cover.png";
 import cover3 from "../Assets/projects/project3/cover.png";
 import cover4 from "../Assets/projects/project4/cover.png";
@@ -25,7 +25,7 @@ import p3img1 from "../Assets/projects/project3/image1.png";
 import p3img2 from "../Assets/projects/project3/image2.png";
 import p3img3 from "../Assets/projects/project3/image3.png";
 
-import p4img1 from "../Assets/projects/project4/image1.png";
+import p4img1 from "../Assets/projects/project4/image1.svg";
 
 import p5img1 from "../Assets/projects/project5/image1.png";
 import p5img2 from "../Assets/projects/project5/image2.png";
@@ -64,20 +64,28 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Lucky Dube Landing Page",
+    title: "Mirempt App",
     description:
-      "An artist landing page where fans can find out more about Lucky Dube",
-    type: "UI Design",
+      "Mirempt is a web app tool that companies can use to do HR management",
+    type: "Frontend Next App",
     about:
-      "This is a landing page I designed to celebrate the music and legacy of Lucky Dube. During this project, I focused on structuring content, designing the layout, and creating a clean and engaging user interface that allows fans to easily learn more about the artist and his impact on reggae music.",
-    thumbnail: thumb2,
-    cover: cover2,
-    technologies: ["Figma", "Dark Mode", "Typography", "Mesh Gradients"],
-    images: [p2img1, p2img2, p2img3],
+      "With Mirenpet, companies can manage their employees, contract status, handle payslips, leave requests, track employee careers, and maintain full control of employee documentation. In this project, I focused on developing the frontend using Next.js, structuring reusable components, and building an intuitive interface that allows HR teams to manage employee data efficiently.",
+    thumbnail: thumb5,
+    cover: cover5,
+    technologies: [
+      "Next.js",
+      "Styled-Components",
+      "TypeScript",
+      "React",
+      "Context API",
+      "Chart.js",
+      "Hooks",
+    ],
+    images: [p5img1, p5img2, p5img3, p5img4],
     palette: {
-      background: "#04180B",
-      primary: "#3DF789",
-      footer: "#1A5331",
+      background: "#101225",
+      primary: "#5E6DF1",
+      footer: "#373E79",
     },
   },
   {
@@ -122,32 +130,6 @@ export const projects = [
   },
   {
     id: 5,
-    title: "Mirempt App",
-    description:
-      "Mirempt is a web app tool that companies can use to do HR management",
-    type: "Frontend Next App",
-    about:
-      "With Mirenpet, companies can manage their employees, contract status, handle payslips, leave requests, track employee careers, and maintain full control of employee documentation. In this project, I focused on developing the frontend using Next.js, structuring reusable components, and building an intuitive interface that allows HR teams to manage employee data efficiently.",
-    thumbnail: thumb5,
-    cover: cover5,
-    technologies: [
-      "Next.js",
-      "Styled-Components",
-      "TypeScript",
-      "React",
-      "Context API",
-      "Chart.js",
-      "Hooks",
-    ],
-    images: [p5img1, p5img2, p5img3, p5img4],
-    palette: {
-      background: "#101225",
-      primary: "#5E6DF1",
-      footer: "#373E79",
-    },
-  },
-  {
-    id: 6,
     title: "Monocard Platform",
     description:
       "Monocard is a virtual business card. In this platform users can manage and customize their cards",
@@ -171,6 +153,24 @@ export const projects = [
       background: "#05060C",
       primary: "#07FB5A",
       footer: "#39563C",
+    },
+  },
+  {
+    id: 6,
+    title: "Lucky Dube Landing Page",
+    description:
+      "An artist landing page where fans can find out more about Lucky Dube",
+    type: "UI Design",
+    about:
+      "This is a landing page I designed to celebrate the music and legacy of Lucky Dube. During this project, I focused on structuring content, designing the layout, and creating a clean and engaging user interface that allows fans to easily learn more about the artist and his impact on reggae music.",
+    thumbnail: thumb2,
+    cover: cover2,
+    technologies: ["Figma", "Dark Mode", "Typography", "Mesh Gradients"],
+    images: [p2img1, p2img2, p2img3],
+    palette: {
+      background: "#04180B",
+      primary: "#3DF789",
+      footer: "#1A5331",
     },
   },
 ];

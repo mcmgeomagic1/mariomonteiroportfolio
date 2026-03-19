@@ -5,11 +5,14 @@ import { MainLayout } from "./Layouts/mainLayout";
 import { MouseTracker } from "./Components/MouseTracker";
 import NotFound from "./Pages/NotFound";
 import ProjectDetails from "./Pages/ProjectDetails";
+import ScrollToTop from "./Components/ScrollTop";
 
 function App() {
+  console.log("rerender");
   return (
     <div className="App">
       <MouseTracker />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route path="/" exact element={<Home />} />

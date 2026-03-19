@@ -1,14 +1,68 @@
-import { Container, Section } from "../../styles/StyledCommon.styled";
-import { Text } from "./styledHome.styled";
+import { Container } from "../../styles/StyledCommon.styled";
+import {
+  HeroSectionSection,
+  HeroParagraph,
+} from "../Home/Components/HeroSection/styledHeroSection.styled";
+import { Button } from "../../Components/Button";
+import { FaArrowRightLong } from "react-icons/fa6";
+import {
+  HeroSeactionBox,
+  FlexBox,
+  Image,
+  ButtonWrapper,
+  HeroText,
+} from "./styledAboutMe.styled";
+import myImage from "../../Assets/mariomonteirophoto.png";
 
 function AboutMe() {
   return (
-    <Section padding="100px 0px">
+    <HeroSectionSection>
       <Container>
-        <h1>About Page</h1>
-        <p>This is the about page.</p>
+        <FlexBox>
+          <HeroSeactionBox>
+            <HeroText
+              initial={{ opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+                transition: { duration: 0.9, delay: 0.1 },
+              }}
+              viewport={{ once: true }}
+            >
+              I am Mario Monteiro
+            </HeroText>
+            <HeroParagraph
+              initial={{ opacity: 0 }}
+              whileInView={{
+                opacity: 0.7,
+                transition: { duration: 0.8, delay: 0.2 },
+              }}
+              viewport={{ once: true }}
+            >
+              I am a Frontend Developer and UI/UX Designer with 5+ years of
+              experience; outside of work, I enjoy continuous learning,
+              bodybuilding, DJing and producing music, taking care of my family,
+              and following sports from my home country, Angola.
+            </HeroParagraph>
+            <ButtonWrapper
+              initial={{ opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+                transition: { duration: 0.8, delay: 0.3 },
+              }}
+              viewport={{ once: true }}
+            >
+              <Button type="primary" text="More about me" />
+              <Button
+                type="secondary"
+                text="Download my resume"
+                icon={<FaArrowRightLong />}
+              />
+            </ButtonWrapper>
+          </HeroSeactionBox>
+          <Image src={myImage} alt="mario monteiro photo" />
+        </FlexBox>
       </Container>
-    </Section>
+    </HeroSectionSection>
   );
 }
 

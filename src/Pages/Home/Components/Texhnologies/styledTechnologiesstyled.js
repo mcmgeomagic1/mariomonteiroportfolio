@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const TechnologiesSection = styled.section`
+export const TechnologiesSection = styled(motion.section)`
   padding: 100px 0;
   display: flex;
   justify-content: center;
@@ -19,6 +20,11 @@ export const Paragraph = styled.p`
   color: ${({ theme }) => theme.colors.mainPallet.text};
   opacity: 0.9;
   line-height: 1.6;
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    width: 90%;
+    line-height: 2;
+  }
 `;
 
 export const SkillsBoxWrapper = styled.div`
@@ -59,7 +65,7 @@ export const SkillsBox = styled.div`
   }
 `;
 
-export const SkillsTitle = styled.h3`
+export const SkillsTitle = styled.h4`
   font-size: ${({ theme }) => theme.fontSize.Headline4};
   margin-bottom: 24px;
   position: relative;
@@ -77,7 +83,7 @@ export const SkillsGrid = styled.div`
   gap: 12px;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 24px;
   }
 `;
@@ -95,8 +101,7 @@ export const SkillItem = styled.span`
   transition: all 0.3s ease;
 
   &:hover {
-    background: ${({ theme }) => theme.colors.mainPallet.standard.white};
-    color: ${({ theme }) => theme.colors.mainPallet.standard.black};
+    background: rgba(255, 255, 255, 0.2);
     cursor: default;
   }
 `;

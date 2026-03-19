@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const ProjectDiv = styled.div`
   height: 296px;
@@ -15,13 +16,21 @@ export const ProjectDiv = styled.div`
     text-transform: uppercase;
   }
 
+  p {
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+      margin: 0 auto 0.5em auto;
+      width: 90%;
+    }
+  }
+
   @media (max-width: ${({ theme }) => theme.tablet}) {
-    margin-top: 5em;
+    margin-top: 13em;
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    margin-top: 6.1em;
     grid-gap: 14px;
+    margin-top: 17em;
+    text-align: center;
   }
 `;
 export const ProjectTitle = styled.h2`
@@ -39,7 +48,7 @@ export const ProjectTitle = styled.h2`
   text-transform: uppercase;
 `;
 
-export const ProjectImageBox = styled.div`
+export const ProjectImageBox = styled(motion.div)`
   width: 100%;
   height: 400px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -61,12 +70,11 @@ export const ProjectImageBox = styled.div`
   padding: 2em 2em 0 2em;
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
-    height: 37%;
-    padding: 1em 1em 0 1em;
+    height: 27%;
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    height: 20%;
+    display: none;
   }
 
   img {
@@ -108,16 +116,40 @@ export const HeroGradientImage = styled.img`
   top: 0;
   right: 0;
   z-index: 1;
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    width: 579px;
+    height: 642px;
+    top: 18%;
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 339px;
+    height: 400px;
+    top: -8%;
+    right: -14%;
+  }
 `;
 
 export const HeroGrillGraphs = styled.img`
-  width: 652px;
-  height: 565px;
+  width: 552px;
+  height: 465px;
   object-fit: cover;
   position: absolute;
-  top: 15%;
+  top: 9%;
   right: 0;
   z-index: 0;
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    top: 13%;
+    width: 452px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    top: 21%;
+    width: 292px;
+    height: 265px;
+  }
 `;
 
 export const HorizontalSection = styled.section`
@@ -142,9 +174,12 @@ export const HorizontalTrack = styled.div`
   section {
     min-width: 100vw;
     height: 100vw;
+
+    @media (max-width: ${({ theme }) => theme.tablet}) {
+      height: 100vh;
+    }
   }
 `;
-
 
 export const Slide = styled.div`
   min-width: 100vw;
@@ -157,8 +192,4 @@ export const ProjectsSection = styled.div`
   position: relative;
   height: ${({ slides }) => slides * 100}vh;
   z-index: 9;
-`
-
-
-
-
+`;

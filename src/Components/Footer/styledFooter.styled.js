@@ -9,7 +9,7 @@ export const FooterContent = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   padding-bottom: 40px;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.mainPallet.stroke};
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
     flex-direction: column;

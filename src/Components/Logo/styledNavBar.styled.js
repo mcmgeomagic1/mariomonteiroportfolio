@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const LogoText = styled.span`
   font-size: 24px;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    font-size: 14px;
+  }
 `;
 export const ColoredPart = styled.span`
   font-weight: 700;

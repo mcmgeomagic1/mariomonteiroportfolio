@@ -10,15 +10,31 @@ import {
   SkillItem,
   SkillsGrid,
   SkillsGradient2,
+  IconBox,
 } from "./styledTechnologiesstyled";
 
 import SkillsGraph from "../../../../Assets/skillsGraph.png";
 import SkillsGraph2 from "../../../../Assets/skillsGraph2.png";
+import { LuCodesandbox } from "react-icons/lu";
+import { FaFigma } from "react-icons/fa";
 
 function Technologies() {
   return (
     <TechnologiesSection>
-      <Container textAlign="center">
+      <Container
+        textAlign="center"
+        initial={{ opacity: 0, sale: 0.5 }}
+        whileInView={{
+          opacity: 1,
+          scale: 1,
+          transition: {
+            duration: 1,
+          },
+        }}
+        viewport={{
+          once: true,
+        }}
+      >
         <h2>My Skills and Technologies</h2>
         <Paragraph>
           Turn ideas into fast, scalable, high-converting web experiences. With
@@ -27,6 +43,9 @@ function Technologies() {
         </Paragraph>
         <SkillsBoxWrapper>
           <SkillsBox>
+            <IconBox>
+              <LuCodesandbox />
+            </IconBox>
             <SkillsTitle>Frontend</SkillsTitle>
             <SkillsList>
               <SkillsGrid>
@@ -45,6 +64,9 @@ function Technologies() {
             </SkillsList>
           </SkillsBox>
           <SkillsBox>
+            <IconBox>
+              <FaFigma />
+            </IconBox>
             <SkillsTitle>UI/UX Design</SkillsTitle>
             <SkillsList>
               <SkillsGrid>

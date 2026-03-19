@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Section = styled.section`
   width: 100%;
@@ -8,9 +9,13 @@ export const Section = styled.section`
   height: ${(props) => (props.height ? props.height : "auto")};
   background: ${(props) => (props.background ? props.background : "auto")};
   text-align: ${(props) => (props.textAlign ? props.textAlign : "left")};
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    padding: 60px 0px;
+  }
 `;
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   max-width: 1170px;
   margin: 0 auto;
   position: ${(props) => (props.position ? props.position : "auto")};
@@ -28,5 +33,6 @@ export const Container = styled.div`
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 90%;
+    padding: 0px 0px;
   }
 `;

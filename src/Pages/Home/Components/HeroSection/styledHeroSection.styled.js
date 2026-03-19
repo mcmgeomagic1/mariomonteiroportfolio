@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const HeroSectionSection = styled.header`
   position: relative;
@@ -7,6 +8,7 @@ export const HeroSectionSection = styled.header`
   display: flex;
   align-items: center;
 `;
+
 export const HeroSeactionBox = styled.div`
   display: flex;
   flex-direction: column;
@@ -25,7 +27,7 @@ export const HeroSeactionBox = styled.div`
   }
 `;
 
-export const HeroText = styled.h1`
+export const HeroText = styled(motion.h1)`
   background: linear-gradient(
     to top left,
     ${({ theme }) => theme.colors.mainPallet.primary},
@@ -47,9 +49,13 @@ export const HeroText = styled.h1`
   }
 `;
 
-export const HeroParagraph = styled.p`
+export const HeroParagraph = styled(motion.p)`
   width: 95%;
   z-index: 10;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    margin: 0 auto;
+  }
 `;
 
 export const HeroImage = styled.img`
@@ -71,6 +77,11 @@ export const HeroGradientImage = styled.img`
   top: 0;
   right: 0;
   z-index: 1;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 349px;
+    height: 502px;
+  }
 `;
 
 export const HeroGrillGraphs = styled.img`
@@ -81,6 +92,11 @@ export const HeroGrillGraphs = styled.img`
   top: 6%;
   right: 0;
   z-index: 0;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 352px;
+    height: 465px;
+  }
 `;
 
 export const OvalGlow = styled.div`
@@ -99,9 +115,14 @@ export const OvalGlow = styled.div`
   @media (max-width: ${({ theme }) => theme.tablet}) {
     right: 18.3%;
   }
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    top: -20%;
+    right: 32.3%;
+  }
 `;
 
-export const ButtonWrapper = styled.div`
+export const ButtonWrapper = styled(motion.div)`
   display: flex;
   position: relative;
   z-index: 100;
@@ -110,5 +131,6 @@ export const ButtonWrapper = styled.div`
   @media (max-width: ${({ theme }) => theme.tablet}) {
     width: 100%;
     justify-content: center;
+    gap: 2px;
   }
 `;
