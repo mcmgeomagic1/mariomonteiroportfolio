@@ -5,7 +5,6 @@ export const ContactSection = styled.section`
   position: relative;
   min-height: 100vh;
   display: flex;
-  background: ${({ theme }) => theme.colors.mainPallet.background};
 `;
 
 export const ContactWrapper = styled.div`

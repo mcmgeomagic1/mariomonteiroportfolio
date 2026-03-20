@@ -1,27 +1,32 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-export const CertificationBox = styled.div`
+export const CertificationBox = styled(motion.div)`
   width: 100%;
-  background: ${({ theme }) => theme.colors.mainPallet.stroke};
-  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 25px;
   padding: 24px;
+  height: 220px;
   display: flex;
   flex-direction: column;
-  grid-gap: 1em;
+  gap: 1em;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    height: 190px;
+  }
 `;
 
 export const TopPart = styled.div`
   display: flex;
   grid-gap: 1em;
   align-items: center;
-  height: 40px;
+  height: 75px;
 
   img {
-    width: 20%;
+    width: ${(props) => (props.isImageLarge ? "140px" : "59px")};
+    max-width: 100%;
+    height: auto;
   }
-
   span {
     opacity: 0.7;
   }
@@ -29,6 +34,11 @@ export const TopPart = styled.div`
 
 export const CursoTitle = styled.h4`
   font-weight: 700;
+  height: 90px;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    font-size: 120%;
+  }
 `;
 
 export const BottomPart = styled.div`

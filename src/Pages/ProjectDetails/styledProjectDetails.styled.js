@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const ProjectDetailsBox = styled.section`
   position: relative;
@@ -131,13 +132,13 @@ export const ImagesDiv = styled.div`
   }
 `;
 
-export const CoverImage = styled.img`
+export const CoverImage = styled(motion.img)`
   width: 100%;
   object-position: cover;
   border: 1px solid ${({ theme }) => theme.colors.mainPallet.stroke};
 `;
 
-export const ProjectImages = styled.img`
+export const ProjectImages = styled(motion.img)`
   border: 1px solid ${({ theme }) => theme.colors.mainPallet.stroke};
 `;
 export const HeroGradientImage = styled.img`

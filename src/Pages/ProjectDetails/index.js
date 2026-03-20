@@ -20,6 +20,7 @@ import { useThemeContext } from "../../Context/ThemeContext";
 import { useEffect } from "react";
 import gradientImage from "../../Assets/Gradien-graph-bg.png";
 import grillImage from "../../Assets/grill.png";
+import { easeInOut } from "framer-motion";
 
 function ProjectDetails() {
   const { id } = useParams();
@@ -61,9 +62,34 @@ function ProjectDetails() {
             </SkillsGrid>
           </SkillsDiv>
           <ImagesDiv>
-            <CoverImage src={project.cover} />
+            <CoverImage
+              src={project.cover}
+              variants={{
+                hidden: { opacity: 0, scale: 0.9 },
+                visible: {
+                  opacity: 1,
+                  scale: 1,
+                  transition: {
+                    duration: 0.2,
+                    ease: "easeOut",
+                    delay: 1,
+                  },
+                },
+              }}
+              initial="hidden"
+              animate="visible"
+            />
             {project.images.map((image) => (
-              <ProjectImages src={image} />
+              <ProjectImages
+                src={image}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{
+                  opacity: 1,
+                  scale: 1,
+                  transition: { duration: 0.2, delay: 0.2 },
+                }}
+                viewport={{ once: true }}
+              />
             ))}
           </ImagesDiv>
         </ProjectDetailsBox>

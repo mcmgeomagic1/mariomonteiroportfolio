@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export const ProjectDiv = styled.div`
   height: 296px;
-  margin: 0 auto;
+  margin: -1.8em auto 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

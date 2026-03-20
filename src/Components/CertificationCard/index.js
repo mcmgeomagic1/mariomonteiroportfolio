@@ -4,20 +4,33 @@ import {
   CursoTitle,
   BottomPart,
 } from "./styledCertificationCard";
-import udemy from "../../Assets/udemy.png";
-import andrey from "../../Assets/andrey.png";
 
-export const CertificationCard = () => {
+export const CertificationCard = ({
+  courseImage,
+  course,
+  instructureImg,
+  instructoreName,
+  isImageLarge,
+  delayProp,
+}) => {
   return (
-    <CertificationBox>
-      <TopPart>
-        <img src={udemy} alt="course instituition" />
+    <CertificationBox
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{
+        opacity: 1,
+        x: 0,
+        transition: { duration: 0.3, delay: delayProp },
+      }}
+      viewport={{ once: true }}
+    >
+      <TopPart isImageLarge={isImageLarge}>
+        <img src={courseImage} alt="course instituition" />
         <span>Online</span>
       </TopPart>
-      <CursoTitle>Fullstack Web Development (React.js/Node.js)</CursoTitle>
+      <CursoTitle>{course}</CursoTitle>
       <BottomPart>
-        <img src={andrey} alt="andrey" />
-        <span>By Andrey Naegoe</span>
+        <img src={instructureImg} alt="andrey" />
+        <span>{instructoreName}</span>
       </BottomPart>
     </CertificationBox>
   );
