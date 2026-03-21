@@ -20,7 +20,7 @@ import { FaFigma } from "react-icons/fa";
 
 function Technologies() {
   return (
-    <TechnologiesSection>
+    <TechnologiesSection id="technologies">
       <Container
         textAlign="center"
         initial={{ opacity: 0, sale: 0.5 }}

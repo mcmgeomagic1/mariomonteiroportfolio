@@ -65,39 +65,16 @@ export const Footer = () => {
               <NavGrid>
                 <NavColumn>
                   <NavTitle>Home</NavTitle>
-                  <NavItem>
-                    <Link to="/">Home</Link>
-                  </NavItem>
+
                   <NavList>
                     <NavItem>
-                      <Link to="/">Skills and Technologies</Link>
+                      <Link to="/#technologies">Skills and Technologies</Link>
                     </NavItem>
                     <NavItem>
-                      <Link to="/">Contact me</Link>
+                      <Link to="/#contact">Contact me</Link>
                     </NavItem>
                     <NavItem>
                       <Link to="/about">About me</Link>
-                    </NavItem>
-                  </NavList>
-                </NavColumn>
-
-                <NavColumn>
-                  <NavTitle>Download my CV</NavTitle>
-                  <NavList>
-                    <NavItem>
-                      <NavLink href="/cv.pdf" download>
-                        English CV
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="/cv-pt.pdf" download>
-                        Portuguese CV
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="/cv-pt.pdf" download>
-                        Chinese CV
-                      </NavLink>
                     </NavItem>
                   </NavList>
                 </NavColumn>
@@ -123,6 +100,27 @@ export const Footer = () => {
                     </NavItem>
                     <NavItem>
                       <Link to="projects/6">Lucky Dube</Link>
+                    </NavItem>
+                  </NavList>
+                </NavColumn>
+
+                <NavColumn>
+                  <NavTitle>Download my CV</NavTitle>
+                  <NavList>
+                    <NavItem>
+                      <NavLink href="/cv.pdf" download>
+                        English CV
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="/cv-pt.pdf" download>
+                        Portuguese CV
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="/cv-pt.pdf" download>
+                        Chinese CV
+                      </NavLink>
                     </NavItem>
                   </NavList>
                 </NavColumn>
