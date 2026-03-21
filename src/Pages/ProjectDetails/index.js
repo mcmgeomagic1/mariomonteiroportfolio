@@ -39,7 +39,11 @@ function ProjectDetails() {
   if (!project) return <h1>Project not found</h1>;
 
   return (
+<<<<<<< HEAD
     <Section padding="60px 0;">
+=======
+    <Section padding="100px 0;">
+>>>>>>> cb0526ea6824f08c519e0f4897fdf7325e35a9ca
       <Container>
         <ProjectDetailsBox>
           <TopInfo>

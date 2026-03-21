@@ -53,7 +53,11 @@ function Projects() {
         <HorizontalTrack ref={horizontalRef}>
           {projects.map((project, index) => (
             <Section key={index} background={project.palette.background}>
+<<<<<<< HEAD
               <Container height="100vh" padding="25px 0px" position="relative">
+=======
+              <Container height="100vh" padding="45px 0px" position="relative">
+>>>>>>> cb0526ea6824f08c519e0f4897fdf7325e35a9ca
                 <ProjectDiv>
                   <h4>{project.type}</h4>
                   <ProjectTitle color={project.palette.primary}>

@@ -8,7 +8,11 @@ export const ProjectDiv = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   grid-gap: 0px;
+=======
+  grid-gap: 24px;
+>>>>>>> cb0526ea6824f08c519e0f4897fdf7325e35a9ca
   position: relative;
   z-index: 1000;
 
@@ -17,7 +21,10 @@ export const ProjectDiv = styled.div`
   }
 
   p {
+<<<<<<< HEAD
     margin-bottom: 1.5em;
+=======
+>>>>>>> cb0526ea6824f08c519e0f4897fdf7325e35a9ca
     @media (max-width: ${({ theme }) => theme.mobile}) {
       margin: 0 auto 0.5em auto;
       width: 90%;
@@ -34,6 +41,7 @@ export const ProjectDiv = styled.div`
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     grid-gap: 14px;
+<<<<<<< HEAD
     margin-top: 13em;
     text-align: center;
   }
@@ -41,6 +49,15 @@ export const ProjectDiv = styled.div`
     @media (max-height: ${theme._13inchHeight})  {
       grid-gap: 0em;
       margin-top: -2em;
+=======
+    margin-top: 17em;
+    text-align: center;
+  }
+  ${({ theme }) => `
+    @media (max-height: ${theme._13inchHeight}) and (max-width: 1230px) {
+      grid-gap: 0em;
+      margin-top: -3em;
+>>>>>>> cb0526ea6824f08c519e0f4897fdf7325e35a9ca
     }
   `}
 `;
@@ -61,7 +78,11 @@ export const ProjectTitle = styled.h2`
 
 export const ProjectImageBox = styled(motion.div)`
   width: 100%;
+<<<<<<< HEAD
   height: 55%;
+=======
+  height: 400px;
+>>>>>>> cb0526ea6824f08c519e0f4897fdf7325e35a9ca
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(10px);
@@ -101,10 +122,16 @@ export const ProjectImageBox = styled(motion.div)`
   }
 
   ${({ theme }) => `
+<<<<<<< HEAD
     @media (max-height: ${theme._13inchHeight})  {
       width: 100%;
       height: 55%;
       object-fit:;
+=======
+    @media (max-height: ${theme._13inchHeight}) and (max-width: 1230px) {
+      width: 100%;
+      height: 350px;
+>>>>>>> cb0526ea6824f08c519e0f4897fdf7325e35a9ca
     }
   `}
 `;
