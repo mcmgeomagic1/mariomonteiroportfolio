@@ -1,19 +1,29 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
+export const Main = styled.div`
+  width: 55%;
+
+  p {
+    width: 100%;
+  }
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    width: 100%;
+  }
+`;
 export const LanguageSection = styled.div`
   position: relative;
   padding: 100px 0px;
   z-index: 5;
-  height: 730px;
+  height: 80%;
   p {
-    width: 59%;
+    width: 100%;
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     padding: 60px 0px;
-    height: 520px;
-
+    height: 100%;
     h2 {
       margin-bottom: 0.5em;
     }
@@ -99,7 +109,7 @@ export const LanguageGraps = styled.img`
   object-fit: cover;
   position: absolute;
   top: 25%;
-  right: 12%;
+  right: 0%;
   z-index: 1;
 
   @media (max-width: ${({ theme }) => theme.tablet}) {

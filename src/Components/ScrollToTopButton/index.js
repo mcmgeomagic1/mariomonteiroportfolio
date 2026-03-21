@@ -28,7 +28,7 @@ export const ScrollToTopButton = () => {
 
   return (
     <ArrowButton $visible={visible} onClick={scrollToTop}>
-      <span>↑</span>
+      <span> Back to top ↑</span>
     </ArrowButton>
   );
 };

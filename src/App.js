@@ -2,21 +2,13 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import AboutMe from "./Pages/AboutMe";
 import { MainLayout } from "./Layouts/mainLayout";
-import { MouseTracker } from "./Components/MouseTracker";
 import NotFound from "./Pages/NotFound";
 import ProjectDetails from "./Pages/ProjectDetails";
-import ScrollToTop from "./Components/ScrollTop";
-import ScrollToHash from "./Components/ScrollToHash";
-import { ScrollToTopButton } from "./Components/ScrollToTopButton";
 
 function App() {
   console.log("rerender");
   return (
     <div className="App">
-      <MouseTracker />
-      <ScrollToTop />
-      <ScrollToHash />
-      <ScrollToTopButton />
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route path="/" exact element={<Home />} />

@@ -10,7 +10,19 @@ import resume from "../../../../Assets/mariocv16.pdf";
 function Experience() {
   return (
     <ExperienceSection id="experiences">
-      <Container>
+      <Container
+        initial={{ opacity: 0, sale: 0.5 }}
+        whileInView={{
+          opacity: 1,
+          scale: 1,
+          transition: {
+            duration: 1,
+          },
+        }}
+        viewport={{
+          once: true,
+        }}
+      >
         <ExperienceMainDiv>
           <h2>Know my Experience</h2>
           <p>

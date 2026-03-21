@@ -5,16 +5,17 @@ export const ArrowButton = styled.button`
   bottom: 30px;
   right: 30px;
 
-  width: 50px;
+  width: 170px;
   height: 50px;
-  border-radius: 50%;
+  border-radius: 25px;
 
   display: flex;
   align-items: center;
   justify-content: center;
+  background: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(5px);
 
-  background: ${({ theme }) => theme.colors.mainPallet.primary};
-  color: ${({ theme }) => theme.colors.mainPallet.standard.black};
+  color: ${({ theme }) => theme.colors.mainPallet.standard.white};
 
   border: none;
   cursor: pointer;
