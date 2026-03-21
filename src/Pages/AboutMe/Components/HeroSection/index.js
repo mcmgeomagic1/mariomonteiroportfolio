@@ -18,6 +18,7 @@ import {
 import myImage from "../../../../Assets/mariomonteirophoto.png";
 import gradientImage from "../../../../Assets/Gradien-graph-bg.png";
 import grillImage from "../../../../Assets/grill.png";
+import { Link } from "react-router-dom";
 
 function AboutMeHero() {
   return (
@@ -56,12 +57,16 @@ function AboutMeHero() {
               }}
               viewport={{ once: true }}
             >
-              <Button type="primary" text="More about me" />
-              <Button
-                type="secondary"
-                text="Download my resume"
-                icon={<FaArrowRightLong />}
-              />
+              <Link to="/about#certifications" reloadDocument>
+                <Button type="primary" text="More about me" />
+              </Link>
+              <Link to="/about#experiences" reloadDocument>
+                <Button
+                  type="secondary"
+                  text="Download my resume"
+                  icon={<FaArrowRightLong />}
+                />
+              </Link>
             </ButtonWrapper>
           </HeroSeactionBox>
           <Image

@@ -8,7 +8,7 @@ import { MdOutlineFileDownload } from "react-icons/md";
 
 function Experience() {
   return (
-    <ExperienceSection>
+    <ExperienceSection id="experiences">
       <Container>
         <ExperienceMainDiv>
           <h2>Know my Experience</h2>

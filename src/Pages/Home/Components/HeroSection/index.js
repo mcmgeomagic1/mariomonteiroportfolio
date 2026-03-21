@@ -52,9 +52,9 @@ function HeroSection() {
             viewport={{ once: true }}
           >
             <Link to="/#contact">
-              <Button type="primary" text="Hire me" />
+              <Button type="primary" text="Hire me" reloadDocument />
             </Link>
-            <Link to="/#projects">
+            <Link to="/#projects" reloadDocument>
               <Button
                 type="secondary"
                 text="See my work"

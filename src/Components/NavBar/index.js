@@ -10,10 +10,18 @@ export const Navbar = () => {
         <main>
           <Logo />
           <nav>
-            <StyledNavLink to="/">Home</StyledNavLink>
-            <StyledNavLink to="/#projects">Projects</StyledNavLink>
-            <StyledNavLink to="/about">About Me</StyledNavLink>
-            <StyledNavLink to="/#contact">Contact Me</StyledNavLink>
+            <StyledNavLink to="/" reloadDocument>
+              Home
+            </StyledNavLink>
+            <StyledNavLink to="/#projects" reloadDocument>
+              Projects
+            </StyledNavLink>
+            <StyledNavLink to="/about" reloadDocument>
+              About Me
+            </StyledNavLink>
+            <StyledNavLink to="/#contact" reloadDocument>
+              Contact Me
+            </StyledNavLink>
           </nav>
         </main>
       </Container>

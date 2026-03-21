@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
 import { ColoredPart, LogoText } from "./styledNavBar.styled";
 
 export const Logo = () => {
   return (
-    <LogoText>
-      <ColoredPart>MARIO</ColoredPart>MONTEIRO
-    </LogoText>
+    <Link to="/" reloadDocument>
+      <LogoText>
+        <ColoredPart>MARIO</ColoredPart>MONTEIRO
+      </LogoText>
+    </Link>
   );
 };

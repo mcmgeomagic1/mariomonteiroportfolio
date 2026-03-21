@@ -14,6 +14,7 @@ import codecampinstructor from "../../../../Assets/codecampinstructor.png";
 function Certifications() {
   return (
     <CertificationSection
+      id="certifications"
       initial={{ opacity: 0, sale: 0.5 }}
       whileInView={{
         opacity: 1,
