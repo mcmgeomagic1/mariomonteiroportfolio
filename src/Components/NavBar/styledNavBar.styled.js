@@ -47,7 +47,7 @@ export const MobileMenu = styled.div`
   position: fixed;
   top: 0;
   right: 0;
-  width: 360px;
+  width: 60%;
   height: 100vh;
   background: ${({ theme }) => theme.colors.mainPallet.background};
   display: flex;
