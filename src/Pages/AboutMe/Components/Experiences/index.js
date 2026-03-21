@@ -5,6 +5,7 @@ import {
   ExperienceMainDiv,
 } from "./styledExperience.styled";
 import { MdOutlineFileDownload } from "react-icons/md";
+import resume from "../../../../Assets/mariocv16.pdf";
 
 function Experience() {
   return (
@@ -18,11 +19,13 @@ function Experience() {
             products. For a detailed overview of my experience and
             responsibilities, download my resume below.
           </p>
-          <Button
-            text="Download my Resume"
-            type="primary"
-            icon={<MdOutlineFileDownload />}
-          />
+          <a href={resume} download>
+            <Button
+              text="Download my Resume"
+              type="primary"
+              icon={<MdOutlineFileDownload />}
+            />
+          </a>
         </ExperienceMainDiv>
       </Container>
     </ExperienceSection>
