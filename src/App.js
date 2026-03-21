@@ -7,6 +7,7 @@ import NotFound from "./Pages/NotFound";
 import ProjectDetails from "./Pages/ProjectDetails";
 import ScrollToTop from "./Components/ScrollTop";
 import ScrollToHash from "./Components/ScrollToHash";
+import { ScrollToTopButton } from "./Components/ScrollToTopButton";
 
 function App() {
   console.log("rerender");
@@ -15,6 +16,7 @@ function App() {
       <MouseTracker />
       <ScrollToTop />
       <ScrollToHash />
+      <ScrollToTopButton />
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route path="/" exact element={<Home />} />

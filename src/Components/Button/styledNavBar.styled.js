@@ -10,10 +10,13 @@ export const ButtonBox = styled.button`
   ${(props) =>
     props.$type === "primary" &&
     `
+	    transition: all 0.3s ease;
+  
 		&:hover {
 			background-color: ${props.theme.colors.mainPallet.standard.white};
 			color: ${props.theme.colors.mainPallet.standard.black};
 			border: none;
+			transform: translateY(-3px);
 		}
 	`}
 
