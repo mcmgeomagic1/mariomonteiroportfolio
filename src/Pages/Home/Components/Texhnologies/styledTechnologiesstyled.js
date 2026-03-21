@@ -10,7 +10,7 @@ export const TechnologiesSection = styled(motion.section)`
   position: relative;
   overflow: hidden;
   min-height: 100vh;
-  margin-top: -1px; /* Remove any gap */
+  margin-top: -1px;
   background: ${({ theme }) => theme.colors.mainPallet.background};
 `;
 
@@ -34,7 +34,7 @@ export const SkillsBoxWrapper = styled.div`
   width: 100%;
   margin-top: 64px;
   position: relative;
-  z-index: 1000;
+  z-index: 20;
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
     flex-direction: column;

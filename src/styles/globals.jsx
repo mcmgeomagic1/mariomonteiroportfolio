@@ -107,10 +107,6 @@ const GlobalStyles = createGlobalStyle`
 	nav {
 		display: flex;
 		grid-gap: 2em;
-
-		@media (max-width: ${({ theme }) => theme.mobile}) {
-            display: none;
-        }
 	}
 	
 	a {

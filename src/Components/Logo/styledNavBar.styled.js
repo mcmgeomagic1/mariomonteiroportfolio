@@ -4,7 +4,7 @@ export const LogoText = styled.span`
   font-size: 24px;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    font-size: 14px;
+    font-size: 19px;
   }
 `;
 export const ColoredPart = styled.span`
