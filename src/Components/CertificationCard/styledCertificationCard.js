@@ -12,7 +12,7 @@ export const CertificationBox = styled(motion.div)`
   gap: 1em;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    height: 190px;
+    height: 230px;
   }
 `;
 

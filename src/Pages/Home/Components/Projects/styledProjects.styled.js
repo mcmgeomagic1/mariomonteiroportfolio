@@ -8,11 +8,7 @@ export const ProjectDiv = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
   grid-gap: 0px;
-=======
-  grid-gap: 24px;
->>>>>>> cb0526ea6824f08c519e0f4897fdf7325e35a9ca
   position: relative;
   z-index: 1000;
 
@@ -23,8 +19,10 @@ export const ProjectDiv = styled.div`
   p {
     margin-bottom: 1.5em;
     @media (max-width: ${({ theme }) => theme.mobile}) {
-      margin: 0 auto 0.5em auto;
+      margin: -1em auto 0.5em auto;
       width: 90%;
+      font-size: 110%;
+    line-height: 1.4em;
     }
 
     @media (max-height: ${({ theme }) => theme._13inchHeight}) {
@@ -37,7 +35,7 @@ export const ProjectDiv = styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    grid-gap: 14px;
+    grid-gap: 1em;
     margin-top: 13em;
     text-align: center;
   }
@@ -105,16 +103,10 @@ export const ProjectImageBox = styled(motion.div)`
   }
 
   ${({ theme }) => `
-<<<<<<< HEAD
     @media (max-height: ${theme._13inchHeight})  {
       width: 100%;
       height: 55%;
       object-fit:;
-=======
-    @media (max-height: ${theme._13inchHeight}) and (max-width: 1230px) {
-      width: 100%;
-      height: 350px;
->>>>>>> cb0526ea6824f08c519e0f4897fdf7325e35a9ca
     }
   `}
 `;
@@ -175,7 +167,8 @@ export const HeroGrillGraphs = styled.img`
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    top: 21%;
+    top: 1%;
+     right: -21%;
     width: 292px;
     height: 265px;
   }

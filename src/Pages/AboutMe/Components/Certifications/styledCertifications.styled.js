@@ -13,11 +13,8 @@ export const CertificationSection = styled(motion.div)`
 `;
 
 export const Top = styled.div`
-<<<<<<< HEAD
 
 
-=======
->>>>>>> cb0526ea6824f08c519e0f4897fdf7325e35a9ca
   h2 {
     margin-bottom: 0.2em;
 
@@ -42,11 +39,7 @@ export const CardsBox = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 2em;
   width: 100%;
-<<<<<<< HEAD
   margin-top: 2.2em;
-=======
-  margin-top: 2em;
->>>>>>> cb0526ea6824f08c519e0f4897fdf7325e35a9ca
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
     grid-template-columns: repeat(2, 1fr);
@@ -54,5 +47,6 @@ export const CardsBox = styled.div`
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     grid-template-columns: 1fr;
+     margin-top: 3.2em;
   }
 `;

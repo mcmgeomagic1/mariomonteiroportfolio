@@ -32,8 +32,11 @@ export const HeroSeactionBox = styled.div`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 100%;
     text-align: center;
+    grid-gap: 5px;
    p {
-    margin: 0 auto;
+    margin: 0 auto 1.2em auto;
+    font-size: 110%;
+    line-height: 1.4em;
     }
   }
 
@@ -89,8 +92,9 @@ export const Image = styled(motion.img)`
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin: 0 auto;
-    width: 252px;
-    height: 318px;
+    width: 232px;
+    height: 298px;
+    margin-top: 1.4em;
   }
 
   ${({ theme }) => `

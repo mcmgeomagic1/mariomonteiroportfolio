@@ -19,7 +19,7 @@ const GlobalStyles = createGlobalStyle`
 		scroll-behavior: smooth;
 
 		@media (max-width: ${({ theme }) => theme.mobile}) {
-    		font-size: 13px;
+    		font-size: 17px;
   		}
 
 		@media (max-width: ${({ theme }) => theme.smallerDevices}) {
@@ -61,10 +61,20 @@ const GlobalStyles = createGlobalStyle`
 		@media (max-width: ${({ theme }) => theme.tablet}) {
 			font-size: 120%;
 		}
+
+		@media (max-width: ${({ theme }) => theme.mobile}) {
+			font-size: 160%;
+			line-height: 1.4em;
+			}
 	}
 
 	h4 {
 		font-weight: 400;
+
+		@media (max-width: ${({ theme }) => theme.mobile}) {
+			font-size: 130%;
+			line-height: 1.4em;
+			}
 	}
 
 	h1 {
@@ -74,6 +84,7 @@ const GlobalStyles = createGlobalStyle`
 		margin-bottom: -.2em;
 		font-size: ${({ theme }) => theme.fontSize.Headline1};
 
+		
 
 		${({ theme }) => `
             @media (max-height: ${theme._13inchHeight}) and (max-width: 1230px) {
@@ -88,6 +99,9 @@ const GlobalStyles = createGlobalStyle`
 				font-size: 330%;
 			}
 		`}
+
+	
+	}
 	}
 
 	h2{
@@ -104,7 +118,7 @@ const GlobalStyles = createGlobalStyle`
     	z-index: 10;
 
     	@media (max-width: ${({ theme }) => theme.mobile}) {
-    		font-size: 270%;
+    		font-size: 260%;
 			line-height: 120%;
 			margin-bottom: .5em;
   		}
@@ -152,7 +166,7 @@ const GlobalStyles = createGlobalStyle`
 
 		@media (max-width: ${({ theme }) => theme.mobile}) {
           font-size: ${({ theme }) => theme.fontSize.buttonText};
-		  height: 40px;
+		  height: 60px;
 		  padding: 0px 14px;
         }
 	}

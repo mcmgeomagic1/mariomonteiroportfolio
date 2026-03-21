@@ -32,4 +32,10 @@ export const ExperienceMainDiv = styled.div`
       width: 100%;
     }
   }
+
+   @media (max-width: ${({ theme }) => theme.mobile}) {
+    h2 {
+    text-align: center;
+    }
+  }
 `;

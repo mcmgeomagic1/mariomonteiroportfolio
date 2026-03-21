@@ -34,7 +34,7 @@ function ProjectDetails() {
   }
 
   return () => resetTheme();
-  }, [project, updateTheme, resetTheme]);
+  }, [project]);
 
   if (!project) return <h1>Project not found</h1>;
 

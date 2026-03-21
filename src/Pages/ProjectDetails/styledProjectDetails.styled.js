@@ -22,12 +22,21 @@ export const ProjectDetailsBox = styled.section`
       width: 90%;
       margin: 0 auto;
     }
+
+    
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+      font-size: 110%;
+    line-height: 1.4em;
+    }
   }
 
   span {
+  opcacity: 0.7;
     @media (max-width: ${({ theme }) => theme.mobile}) {
-      width: 80%;
+      width: 90%;
       margin: 0 auto;
+      font-size: 110%;
+    line-height: 1.4em;
     }
   }
 
@@ -64,6 +73,9 @@ export const TopInfo = styled.div`
   grid-gap: 1em;
   display: flex;
   flex-direction: column;
+
+  span {
+    opacity: 0.7;
 `;
 
 export const AboutDiv = styled.div`

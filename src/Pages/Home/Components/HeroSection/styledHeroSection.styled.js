@@ -7,6 +7,18 @@ export const HeroSectionSection = styled.header`
   z-index: 1;
   display: flex;
   align-items: center;
+
+  h1 {
+   @media (max-width: ${({ theme }) => theme.mobile}) {
+   font-size: 290%;
+   line-height: 125%;
+   margin-bottom: .4em;
+  }
+   @media (max-width: ${({ theme }) => theme.smallerDevices}) {
+   font-size: 450%;
+   line-height: 125%;
+   margin-bottom: .4em;
+  }}
 `;
 
 export const HeroSeactionBox = styled.div`
@@ -92,6 +104,8 @@ export const HeroParagraph = styled(motion.p)`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin: 0 auto 2em auto;
     width: 90%;
+    font-size: 110%;
+    line-height: 1.4em;
   }
 
   
