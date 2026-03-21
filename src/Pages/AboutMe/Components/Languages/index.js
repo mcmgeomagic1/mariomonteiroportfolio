@@ -16,12 +16,12 @@ function Languages() {
     <LanguageSection>
       <Container>
         <Top>
-          <h2>Certifications</h2>
+          <h2>Languages I can speak</h2>
           <p>
-            I believe great professionals never stop learning. The
-            certifications below represent my commitment to continuously
-            improving my skills in development, design, and technology while
-            staying aligned with modern industry standards.
+            I speak Portuguese as my native language, English at a professional
+            level, and Mandarin Chinese at an intermediate level, allowing me to
+            collaborate effectively with international teams and multicultural
+            environments.
           </p>
         </Top>
         <LanguagesDiv>

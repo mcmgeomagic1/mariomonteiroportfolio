@@ -5,6 +5,10 @@ export const ContactSection = styled.section`
   position: relative;
   min-height: 100vh;
   display: flex;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    padding: 60px 0px;
+  }
 `;
 
 export const ContactWrapper = styled.div`

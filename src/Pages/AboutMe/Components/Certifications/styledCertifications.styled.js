@@ -15,6 +15,10 @@ export const CertificationSection = styled(motion.div)`
 export const Top = styled.div`
   h2 {
     margin-bottom: 0.2em;
+
+    @media (max-width: ${({ theme }) => theme.tablet}) {
+      margin-bottom: 0.5em;
+    }
   }
 
   p {

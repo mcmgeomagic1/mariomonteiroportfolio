@@ -16,6 +16,7 @@ const GlobalStyles = createGlobalStyle`
 		font-family: 'Roboto', sans-serif;
     	font-weight: 400;
 		padding: 0px;
+		overflow-x: hidden;
 
 		@media (max-width: ${({ theme }) => theme.mobile}) {
     		font-size: 13px;
@@ -36,6 +37,7 @@ const GlobalStyles = createGlobalStyle`
 
         @media (max-width: ${({ theme }) => theme.mobile}) {
 			line-height: 2;
+			width: 100%;
   		}
 
 	}
@@ -89,6 +91,7 @@ const GlobalStyles = createGlobalStyle`
     	@media (max-width: ${({ theme }) => theme.mobile}) {
     		font-size: 270%;
 			line-height: 120%;
+			margin-bottom: .5em;
   		}
 	}
 

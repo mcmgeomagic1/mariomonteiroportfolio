@@ -2,16 +2,25 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const LanguageSection = styled.div`
-  padding: 100px 0px;
   position: relative;
+  padding: 100px 0px;
   z-index: 5;
+  height: 730px;
+  p {
+    width: 59%;
+  }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     padding: 60px 0px;
-  }
+    height: 520px;
 
-  p {
-    width: 50%;
+    h2 {
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      width: 100%;
+    }
   }
 `;
 
@@ -26,6 +35,9 @@ export const LanguageItem = styled(motion.div)`
   display: flex;
   flex-direction: column;
   grid-gap: 1em;
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    grid-gap: 2em;
+  }
 `;
 
 export const Progress = styled.div`
@@ -68,8 +80,18 @@ export const LanguageGradient = styled.img`
   object-fit: cover;
   position: absolute;
   top: -16%;
-  right: 0;
+  right: -12%;
   z-index: 0;
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    right: -40%;
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    right: -62%;
+    top: 14%;
+    width: 290px;
+    height: 489px;
+  }
 `;
 export const LanguageGraps = styled.img`
   width: 436px;
@@ -79,4 +101,8 @@ export const LanguageGraps = styled.img`
   top: 25%;
   right: 12%;
   z-index: 1;
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    display: none;
+  }
 `;
