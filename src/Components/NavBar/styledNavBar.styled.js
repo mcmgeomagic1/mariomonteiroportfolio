@@ -12,10 +12,11 @@ export const StyledNavLink = styled(NavLink)`
 
   &:hover {
     opacity: 1;
+    color: ${({ theme }) => theme.colors.mainPallet.primary};
   }
-
+  /*
   &.active {
     opacity: 1;
     color: ${({ theme }) => theme.colors.mainPallet.primary};
-  }
+  }*/
 `;

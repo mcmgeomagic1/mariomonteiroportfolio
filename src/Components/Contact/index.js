@@ -22,7 +22,7 @@ function Contact() {
   };
 
   return (
-    <ContactSection>
+    <ContactSection id="contact">
       <Container
         initial={{ opacity: 0, scale: 0.94 }}
         whileInView={{

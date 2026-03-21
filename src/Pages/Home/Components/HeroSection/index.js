@@ -14,10 +14,11 @@ import gradientImage from "../../../../Assets/Gradien-graph-bg.png";
 import grillImage from "../../../../Assets/grill.png";
 import { ThreeCarousels } from "../../../../Components/Carousell";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 function HeroSection() {
   return (
-    <HeroSectionSection>
+    <HeroSectionSection id="home">
       <Container>
         <HeroSeactionBox>
           <HeroText
@@ -50,12 +51,16 @@ function HeroSection() {
             }}
             viewport={{ once: true }}
           >
-            <Button type="primary" text="Hire me" />
-            <Button
-              type="secondary"
-              text="See my work"
-              icon={<FaArrowRightLong />}
-            />
+            <Link to="/#contact">
+              <Button type="primary" text="Hire me" />
+            </Link>
+            <Link to="/#projects">
+              <Button
+                type="secondary"
+                text="See my work"
+                icon={<FaArrowRightLong />}
+              />
+            </Link>
           </ButtonWrapper>
         </HeroSeactionBox>
         <ThreeCarousels />

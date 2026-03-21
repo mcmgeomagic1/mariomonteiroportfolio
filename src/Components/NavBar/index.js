@@ -11,9 +11,9 @@ export const Navbar = () => {
           <Logo />
           <nav>
             <StyledNavLink to="/">Home</StyledNavLink>
-            <StyledNavLink to="/projects">Projects</StyledNavLink>
+            <StyledNavLink to="/#projects">Projects</StyledNavLink>
             <StyledNavLink to="/about">About Me</StyledNavLink>
-            <StyledNavLink to="/contact">Contact Me</StyledNavLink>
+            <StyledNavLink to="/#contact">Contact Me</StyledNavLink>
           </nav>
         </main>
       </Container>

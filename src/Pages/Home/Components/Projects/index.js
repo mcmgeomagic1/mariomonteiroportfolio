@@ -48,7 +48,7 @@ function Projects() {
   }, []);
 
   return (
-    <ProjectsSection ref={sectionRef} slides={projects.length}>
+    <ProjectsSection id="projects" ref={sectionRef} slides={projects.length}>
       <StickyContainer>
         <HorizontalTrack ref={horizontalRef}>
           {projects.map((project, index) => (

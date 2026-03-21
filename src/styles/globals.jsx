@@ -16,7 +16,7 @@ const GlobalStyles = createGlobalStyle`
 		font-family: 'Roboto', sans-serif;
     	font-weight: 400;
 		padding: 0px;
-		overflow-x: hidden;
+		
 
 		@media (max-width: ${({ theme }) => theme.mobile}) {
     		font-size: 13px;

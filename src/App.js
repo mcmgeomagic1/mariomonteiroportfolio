@@ -6,6 +6,7 @@ import { MouseTracker } from "./Components/MouseTracker";
 import NotFound from "./Pages/NotFound";
 import ProjectDetails from "./Pages/ProjectDetails";
 import ScrollToTop from "./Components/ScrollTop";
+import ScrollToHash from "./Components/ScrollToHash";
 
 function App() {
   console.log("rerender");
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       <MouseTracker />
       <ScrollToTop />
+      <ScrollToHash />
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route path="/" exact element={<Home />} />
