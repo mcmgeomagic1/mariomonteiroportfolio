@@ -18,11 +18,7 @@ const Theme = {
     },
   },
   fontSize: {
-<<<<<<< HEAD
     Headline1: "83px",
-=======
-    Headline1: "77px",
->>>>>>> cb0526ea6824f08c519e0f4897fdf7325e35a9ca
     Headline2: "53px",
     Headline3: "33px",
     headline4: "23px",
