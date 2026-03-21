@@ -1,5 +1,5 @@
 import { Button } from "../../../../Components/Button";
-import { Container, Section } from "../../../../styles/StyledCommon.styled";
+import { Container } from "../../../../styles/StyledCommon.styled";
 import {
   HeroSeactionBox,
   HeroParagraph,

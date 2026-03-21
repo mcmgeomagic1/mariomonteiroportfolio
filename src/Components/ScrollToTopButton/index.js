@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { ArrowButton } from "./styledScrollTopBottom.styled";
-import { IoIosArrowUp } from "react-icons/io";
 
 export const ScrollToTopButton = () => {
   const [visible, setVisible] = useState(false);

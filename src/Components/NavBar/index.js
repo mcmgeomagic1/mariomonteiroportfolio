@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
 import { Container } from "../../styles/StyledCommon.styled";
 import { Logo } from "../Logo";
 import {
@@ -13,7 +12,6 @@ import {
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const location = useLocation();
 
   const handleClose = () => setOpen(false);
 

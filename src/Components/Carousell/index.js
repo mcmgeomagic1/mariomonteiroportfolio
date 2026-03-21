@@ -79,13 +79,8 @@ const CarouselTrack = styled.div`
 `;
 
 const CarouselImage = styled.img`
-<<<<<<< HEAD
   width: 250px;
   height: 137px;
-=======
-  width: 266px;
-  height: 147px;
->>>>>>> cb0526ea6824f08c519e0f4897fdf7325e35a9ca
   object-fit: cover;
   flex-shrink: 0;
   margin-right: 20px;

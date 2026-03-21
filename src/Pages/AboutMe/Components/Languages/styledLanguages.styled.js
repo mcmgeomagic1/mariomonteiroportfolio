@@ -2,11 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const Main = styled.div`
-<<<<<<< HEAD
   width: 50%;
-=======
-  width: 55%;
->>>>>>> cb0526ea6824f08c519e0f4897fdf7325e35a9ca
 
   p {
     width: 100%;

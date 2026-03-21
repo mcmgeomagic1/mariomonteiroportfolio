@@ -19,7 +19,6 @@ export const HeroSeactionBox = styled.div`
   flex-direction: column;
   justify-content: center;
   grid-gap: 35px;
-<<<<<<< HEAD
   width: 65%;
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
@@ -28,36 +27,21 @@ export const HeroSeactionBox = styled.div`
     p {
       margin: 0;
     }
-=======
-  width: 53%;
-
-  @media (max-width: ${({ theme }) => theme.tablet}) {
-    width: 75%;
->>>>>>> cb0526ea6824f08c519e0f4897fdf7325e35a9ca
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 100%;
     text-align: center;
-<<<<<<< HEAD
    p {
     margin: 0 auto;
     }
-=======
->>>>>>> cb0526ea6824f08c519e0f4897fdf7325e35a9ca
   }
 
   ${({ theme }) => `
   @media (max-height: ${theme._13inchHeight}) and (max-width: 1230px) {
-<<<<<<< HEAD
     width: 100%;
     grid-gap: 12px;
 
-=======
-    width: 50%;
-    grid-gap: 0px;
-    margin-top: -2em;
->>>>>>> cb0526ea6824f08c519e0f4897fdf7325e35a9ca
     h1 {
       margin: 0;
     }
@@ -93,13 +77,8 @@ export const HeroText = styled(motion.h1)`
 `;
 
 export const Image = styled(motion.img)`
-<<<<<<< HEAD
   width: 398px;
   height: 508px;
-=======
-  width: 402px;
-  height: 518px;
->>>>>>> cb0526ea6824f08c519e0f4897fdf7325e35a9ca
   box-shadow: -12px -12px 0px ${({ theme }) => theme.colors.mainPallet.primary};
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
@@ -120,7 +99,6 @@ export const Image = styled(motion.img)`
     height: 438px;
   }
 `}
-<<<<<<< HEAD
 
  ${({ theme }) => `
   @media (max-height: ${theme._13inchHeight}) and (max-width: ${theme.mobile}) {
@@ -128,8 +106,6 @@ export const Image = styled(motion.img)`
     height: 248px;
   }
 `}
-=======
->>>>>>> cb0526ea6824f08c519e0f4897fdf7325e35a9ca
 `;
 
 export const ButtonWrapper = styled(motion.div)`

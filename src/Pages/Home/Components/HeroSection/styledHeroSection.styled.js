@@ -3,11 +3,7 @@ import { motion } from "framer-motion";
 
 export const HeroSectionSection = styled.header`
   position: relative;
-<<<<<<< HEAD
   height: 90vh;
-=======
-  height: 94vh;
->>>>>>> cb0526ea6824f08c519e0f4897fdf7325e35a9ca
   z-index: 1;
   display: flex;
   align-items: center;

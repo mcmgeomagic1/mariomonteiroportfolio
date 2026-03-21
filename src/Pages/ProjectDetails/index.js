@@ -20,7 +20,7 @@ import { useThemeContext } from "../../Context/ThemeContext";
 import { useEffect } from "react";
 import gradientImage from "../../Assets/Gradien-graph-bg.png";
 import grillImage from "../../Assets/grill.png";
-import { easeInOut } from "framer-motion";
+
 
 function ProjectDetails() {
   const { id } = useParams();
@@ -29,12 +29,12 @@ function ProjectDetails() {
   const project = projects.find((p) => p.id === Number(id));
 
   useEffect(() => {
-    if (project) {
-      updateTheme(project.palette);
-    }
+  if (project) {
+    updateTheme(project.palette);
+  }
 
-    return () => resetTheme(); // 🔥 reset when leaving
-  }, [project]);
+  return () => resetTheme();
+  }, [project, updateTheme, resetTheme]);
 
   if (!project) return <h1>Project not found</h1>;
 
