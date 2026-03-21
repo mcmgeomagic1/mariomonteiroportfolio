@@ -3,6 +3,7 @@ const Theme = {
   tablet: "1140px",
   mobile: "768px",
   smallerDevices: "391px",
+  _13inchHeight: "639px",
   colors: {
     mainPallet: {
       background: "#08161F",
@@ -21,7 +22,7 @@ const Theme = {
     Headline2: "53px",
     Headline3: "33px",
     headline4: "23px",
-    bodyLarge: "17px",
+    bodyLarge: "16px",
     bodySmall: "15px",
     buttonText: "14px",
     buttonText2: "18px",

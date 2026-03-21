@@ -11,6 +11,12 @@ export const Main = styled.div`
   @media (max-width: ${({ theme }) => theme.tablet}) {
     width: 100%;
   }
+
+  ${({ theme }) => `
+  @media (max-height: ${theme._13inchHeight}) and (max-width: 1230px) {
+    width: 45%;
+  }
+`}
 `;
 export const LanguageSection = styled.div`
   position: relative;
@@ -44,6 +50,7 @@ export const LanguagesDiv = styled.div`
 export const LanguageItem = styled(motion.div)`
   display: flex;
   flex-direction: column;
+  margin-bottom: 1em;
   grid-gap: 1em;
   @media (max-width: ${({ theme }) => theme.mobile}) {
     grid-gap: 2em;
@@ -84,7 +91,7 @@ export const Progress = styled.div`
   }
 `;
 
-export const LanguageGradient = styled.img`
+export const LanguageGradient = styled(motion.img)`
   width: 810px;
   height: 1019px;
   object-fit: cover;

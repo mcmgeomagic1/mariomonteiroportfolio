@@ -35,4 +35,10 @@ export const Container = styled(motion.div)`
     width: 90%;
     padding: 0px 0px;
   }
+
+  ${({ theme }) => `
+  @media (max-height: ${theme._13inchHeight}) and (max-width: 1230px) {
+    max-width: 1000px;
+  }
+`}
 `;

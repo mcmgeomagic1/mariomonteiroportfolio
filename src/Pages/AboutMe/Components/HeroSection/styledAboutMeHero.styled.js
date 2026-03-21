@@ -29,6 +29,17 @@ export const HeroSeactionBox = styled.div`
     width: 100%;
     text-align: center;
   }
+
+  ${({ theme }) => `
+  @media (max-height: ${theme._13inchHeight}) and (max-width: 1230px) {
+    width: 50%;
+    grid-gap: 0px;
+    margin-top: -2em;
+    h1 {
+      margin: 0;
+    }
+  }
+`}
 `;
 
 export const HeroText = styled(motion.h1)`
@@ -74,6 +85,13 @@ export const Image = styled(motion.img)`
     width: 252px;
     height: 318px;
   }
+
+  ${({ theme }) => `
+  @media (max-height: ${theme._13inchHeight}) and (max-width: 1230px) {
+    width: 332px;
+    height: 438px;
+  }
+`}
 `;
 
 export const ButtonWrapper = styled(motion.div)`

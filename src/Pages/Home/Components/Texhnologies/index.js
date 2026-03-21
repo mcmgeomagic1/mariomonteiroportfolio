@@ -49,10 +49,9 @@ function Technologies() {
             <SkillsTitle>Frontend</SkillsTitle>
             <SkillsList>
               <SkillsGrid>
-                <SkillItem>React</SkillItem>
-                <SkillItem>Next.js</SkillItem>
-                <SkillItem>HTML</SkillItem>
-                <SkillItem>CSS</SkillItem>
+                <SkillItem>React/Next.js</SkillItem>
+                <SkillItem>HTML/CSS</SkillItem>
+                <SkillItem>Javascript</SkillItem>
                 <SkillItem>Styled-components</SkillItem>
                 <SkillItem>Hooks</SkillItem>
                 <SkillItem>Context API</SkillItem>

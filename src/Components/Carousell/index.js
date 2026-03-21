@@ -63,6 +63,12 @@ const CarouselWrapper = styled.div`
   width: 100%;
   overflow: hidden;
   margin: 20px auto;
+
+  ${({ theme }) => `
+    @media (max-height: ${theme._13inchHeight}) and (max-width: 1230px) {
+      margin: 15px auto;
+    }
+  `}
 `;
 
 const CarouselTrack = styled.div`
@@ -78,6 +84,12 @@ const CarouselImage = styled.img`
   object-fit: cover;
   flex-shrink: 0;
   margin-right: 20px;
+
+  ${({ theme }) => `
+    @media (max-height: ${theme._13inchHeight}) and (max-width: 1230px) {
+       margin-right: 15px;
+    }
+  `}
 `;
 
 export const ThreeCarousels = () => {

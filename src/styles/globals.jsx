@@ -12,7 +12,7 @@ const GlobalStyles = createGlobalStyle`
 	body,html {
 		background: ${({ theme }) => theme.colors.mainPallet.background};
 		color: ${({ theme }) => theme.colors.mainPallet.standard.white};
-		font-size: 18px;
+		font-size: 16px;
 		font-family: 'Roboto', sans-serif;
     	font-weight: 400;
 		padding: 0px;
@@ -73,6 +73,21 @@ const GlobalStyles = createGlobalStyle`
 		line-height: 105%;
 		margin-bottom: -.2em;
 		font-size: ${({ theme }) => theme.fontSize.Headline1};
+
+
+		${({ theme }) => `
+            @media (max-height: ${theme._13inchHeight}) and (max-width: 1230px) {
+			width: 100%;
+			font-size: 420%;
+			margin-bottom: 20px;
+          }
+       `}
+
+	     ${({ theme }) => `
+			@media (max-height: ${theme._13inchHeight}) and (max-width: ${theme.tablet}) {
+				font-size: 330%;
+			}
+		`}
 	}
 
 	h2{

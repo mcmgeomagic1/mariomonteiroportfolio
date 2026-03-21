@@ -15,6 +15,8 @@ export const HeroSeactionBox = styled.div`
   justify-content: center;
   grid-gap: 35px;
   width: 53%;
+  position: relative;
+  z-index: 10;
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
     width: 90%;
@@ -24,7 +26,28 @@ export const HeroSeactionBox = styled.div`
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 100%;
+    grid-gap: 0px;
   }
+
+  ${({ theme }) => `
+  @media (max-height: ${theme._13inchHeight}) and (max-width: 1230px) {
+    width: 54%;
+    grid-gap: 0px;
+    margin-top: -2em;
+
+    h1 {
+      margin: 0;
+    }
+  }
+`}
+
+  ${({ theme }) => `
+  @media (max-height: ${theme._13inchHeight}) and (max-width: ${theme.tablet}) {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+`}
 `;
 
 export const HeroText = styled(motion.h1)`
@@ -56,6 +79,18 @@ export const HeroParagraph = styled(motion.p)`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin: 0 auto;
   }
+
+  @media (max-height: ${({ theme }) => theme._13inchHeight}) {
+    margin-top: -11em;
+    margin-bottom: 1.3em;
+  }
+
+  ${({ theme }) => `
+  @media (max-height: ${theme._13inchHeight}) and (max-width: 1230px) {
+    margin-top: .5em;
+    margin-bottom: 1.5em;
+  }
+`}
 `;
 
 export const HeroImage = styled.img`
@@ -82,6 +117,12 @@ export const HeroGradientImage = styled.img`
     width: 349px;
     height: 502px;
   }
+
+  @media (max-height: ${({ theme }) => theme._13inchHeight}) {
+    width: 949px;
+    height: 1002px;
+    top: -13%;
+  }
 `;
 
 export const HeroGrillGraphs = styled.img`
@@ -96,6 +137,11 @@ export const HeroGrillGraphs = styled.img`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 352px;
     height: 465px;
+  }
+
+  @media (max-height: ${({ theme }) => theme._13inchHeight}) {
+    width: 452px;
+    height: 565px;
   }
 `;
 
@@ -119,6 +165,10 @@ export const OvalGlow = styled.div`
   @media (max-width: ${({ theme }) => theme.tablet}) {
     top: -20%;
     right: 32.3%;
+  }
+
+  @media (max-height: ${({ theme }) => theme._13inchHeight}) {
+    right: 29.3%;
   }
 `;
 

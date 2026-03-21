@@ -12,4 +12,15 @@ export const CarouselBox = styled.div`
   @media (max-width: ${({ theme }) => theme.tablet}) {
     display: none;
   }
+
+  ${({ theme }) => `
+    @media (max-height: ${theme._13inchHeight}) and (max-width: 1230px) {
+      top: 50%;
+      transform: translateY(-50%);
+      img {
+        width: 207px;
+        height: 113px;
+      }
+    }
+  `}
 `;

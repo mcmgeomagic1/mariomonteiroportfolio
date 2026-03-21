@@ -21,6 +21,10 @@ export const ProjectDiv = styled.div`
       margin: 0 auto 0.5em auto;
       width: 90%;
     }
+
+    @media (max-height: ${({ theme }) => theme._13inchHeight}) {
+      margin-bottom: 1em;
+    }
   }
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
@@ -32,6 +36,12 @@ export const ProjectDiv = styled.div`
     margin-top: 17em;
     text-align: center;
   }
+  ${({ theme }) => `
+    @media (max-height: ${theme._13inchHeight}) and (max-width: 1230px) {
+      grid-gap: 0em;
+      margin-top: -3em;
+    }
+  `}
 `;
 export const ProjectTitle = styled.h2`
   text-align: center;
@@ -88,6 +98,13 @@ export const ProjectImageBox = styled(motion.div)`
       object-fit: fill;
     }
   }
+
+  ${({ theme }) => `
+    @media (max-height: ${theme._13inchHeight}) and (max-width: 1230px) {
+      width: 100%;
+      height: 350px;
+    }
+  `}
 `;
 
 export const OvalGlow = styled.div`

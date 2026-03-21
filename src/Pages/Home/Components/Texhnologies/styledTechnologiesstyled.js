@@ -172,4 +172,16 @@ export const IconBox = styled.div`
   svg {
     font-size: 50px;
   }
+
+  ${({ theme }) => `
+  @media (max-height: ${theme._13inchHeight}) and (max-width: 1230px) {
+   width: 70px;
+  height: 70px;
+  margin-bottom: .5em;
+
+   svg {
+    font-size: 30px;
+  }
+  }
+`}
 `;
