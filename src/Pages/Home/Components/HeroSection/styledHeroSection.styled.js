@@ -18,11 +18,7 @@ export const HeroSeactionBox = styled.div`
   flex-direction: column;
   justify-content: center;
   grid-gap: 35px;
-<<<<<<< HEAD
   width: 60%;
-=======
-  width: 53%;
->>>>>>> cb0526ea6824f08c519e0f4897fdf7325e35a9ca
   position: relative;
   z-index: 10;
 
@@ -73,16 +69,12 @@ export const HeroText = styled(motion.h1)`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     font-size: 360%;
     line-height: 125%;
-<<<<<<< HEAD
     margin-bottom: .4em;
-=======
->>>>>>> cb0526ea6824f08c519e0f4897fdf7325e35a9ca
   }
 
   @media (max-width: ${({ theme }) => theme.smallerDevices}) {
     font-size: 332%;
   }
-<<<<<<< HEAD
 
     ${({ theme }) => `
   @media (max-height: ${theme._13inchHeight}) and (max-width: 1230px) {
@@ -107,22 +99,6 @@ export const HeroParagraph = styled(motion.p)`
   }
 
   
-=======
-`;
-
-export const HeroParagraph = styled(motion.p)`
-  width: 95%;
-  z-index: 10;
-
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-    margin: 0 auto;
-  }
-
-  @media (max-height: ${({ theme }) => theme._13inchHeight}) {
-    margin-top: -11em;
-    margin-bottom: 1.3em;
-  }
->>>>>>> cb0526ea6824f08c519e0f4897fdf7325e35a9ca
 
   ${({ theme }) => `
   @media (max-height: ${theme._13inchHeight}) and (max-width: 1230px) {
