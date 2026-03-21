@@ -9,17 +9,59 @@ import {
   Label,
   Input,
   TextArea,
-  SubmitButton,
   ContactWrapper,
+  SuccessModal,
+  ModalContent,
+  SpinnerIcon,
+  SuccessIcon,
 } from "./styledContact.styled";
 import { FaPaperPlane } from "react-icons/fa";
+import { useForm, ValidationError } from "@formspree/react";
+import { useState, useEffect } from "react";
+import { FaCheck } from "react-icons/fa6";
 
 function Contact() {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
-    console.log("Form submitted");
+  const [state, handleSubmit] = useForm("mvzwyjbp");
+  const [showModal, setShowModal] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  // Controlled form data
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    // Formspree will handle the submission
+    await handleSubmit(e);
+
+    setLoading(false);
+  };
+
+  // Watch for Formspree success
+  useEffect(() => {
+    if (state.succeeded) {
+      setShowModal(true);
+
+      // Clear the form fields
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    }
+  }, [state.succeeded]);
 
   return (
     <ContactSection id="contact">
@@ -28,13 +70,9 @@ function Contact() {
         whileInView={{
           opacity: 1,
           scale: 1,
-          transition: {
-            duration: 1,
-          },
+          transition: { duration: 1 },
         }}
-        viewport={{
-          once: true,
-        }}
+        viewport={{ once: true }}
       >
         <ContactWrapper>
           <h2>Let's work together</h2>
@@ -44,7 +82,7 @@ function Contact() {
             real business results.
           </Paragraph>
 
-          <ContactForm onSubmit={handleSubmit}>
+          <ContactForm onSubmit={handleFormSubmit}>
             <FormGroup>
               <Label htmlFor="name">Name</Label>
               <Input
@@ -52,7 +90,14 @@ function Contact() {
                 id="name"
                 name="name"
                 placeholder="Your name"
+                value={formData.name}
+                onChange={handleChange}
                 required
+              />
+              <ValidationError
+                prefix="Name"
+                field="name"
+                errors={state.errors}
               />
             </FormGroup>
 
@@ -64,7 +109,14 @@ function Contact() {
                   id="email"
                   name="email"
                   placeholder="Your email"
+                  value={formData.email}
+                  onChange={handleChange}
                   required
+                />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
                 />
               </FormGroup>
 
@@ -75,7 +127,14 @@ function Contact() {
                   id="subject"
                   name="subject"
                   placeholder="Message subject"
+                  value={formData.subject}
+                  onChange={handleChange}
                   required
+                />
+                <ValidationError
+                  prefix="Subject"
+                  field="subject"
+                  errors={state.errors}
                 />
               </FormGroup>
             </FormRow>
@@ -87,13 +146,42 @@ function Contact() {
                 name="message"
                 placeholder="Your message"
                 rows="5"
+                value={formData.message}
+                onChange={handleChange}
                 required
               />
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+              />
             </FormGroup>
-            <Button type="primary" text="Send message" />
+
+            <Button
+              type="primary"
+              text={loading ? "Sending..." : "Send message"}
+              icon={loading ? <SpinnerIcon /> : <FaPaperPlane />}
+              disabled={loading}
+            />
           </ContactForm>
         </ContactWrapper>
       </Container>
+
+      {showModal && (
+        <SuccessModal>
+          <ModalContent>
+            <SuccessIcon>
+              <FaCheck />
+            </SuccessIcon>
+            <h4>Thanks! Your message was sent.</h4>
+            <Button
+              type="primary"
+              text="Close"
+              onClick={() => setShowModal(false)}
+            />
+          </ModalContent>
+        </SuccessModal>
+      )}
     </ContactSection>
   );
 }
