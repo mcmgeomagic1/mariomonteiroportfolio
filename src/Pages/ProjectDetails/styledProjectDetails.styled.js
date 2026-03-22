@@ -26,17 +26,18 @@ export const ProjectDetailsBox = styled.section`
     
     @media (max-width: ${({ theme }) => theme.mobile}) {
       font-size: 16px;
-    line-height: 1.4em;
+      width: 100%;
+    line-height: 1.8;
     }
   }
 
   span {
   opcacity: 0.7;
     @media (max-width: ${({ theme }) => theme.mobile}) {
-      width: 90%;
+      width: 100%;
       margin: 0 auto;
-      font-size: 110%;
-    line-height: 1.4em;
+      font-size: 16px;
+    line-height: 1.8m;
     }
   }
 
