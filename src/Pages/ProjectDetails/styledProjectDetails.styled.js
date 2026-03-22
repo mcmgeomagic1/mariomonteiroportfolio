@@ -78,7 +78,7 @@ export const TopInfo = styled.div`
   flex-direction: column;
 
   @media (max-width: ${({ theme }) => theme.smallerDevices}) {
-    grid-gap: .2em;
+    grid-gap: .7em;
   }
 
   span {
