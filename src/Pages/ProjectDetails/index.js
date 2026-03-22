@@ -29,14 +29,16 @@ function ProjectDetails() {
   const project = projects.find((p) => p.id === Number(id));
 
   useEffect(() => {
-  if (project) {
-    updateTheme(project.palette);
-  }
+    if (project) {
+      updateTheme(project.palette);
+    }
 
-  return () => resetTheme();
-  }, [project,updateTheme, resetTheme]);
+    return () => resetTheme();
+  }, [project, updateTheme, resetTheme]);
 
   if (!project) return <h1>Project not found</h1>;
+  
+
 
   return (
     <Section padding="60px 0;">

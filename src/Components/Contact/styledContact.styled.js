@@ -70,6 +70,7 @@ export const Label = styled.label`
   font-weight: 500;
   margin-bottom: 1em;
   letter-spacing: 0.5px;
+  font-size: 16px;
 `;
 
 export const Input = styled.input`

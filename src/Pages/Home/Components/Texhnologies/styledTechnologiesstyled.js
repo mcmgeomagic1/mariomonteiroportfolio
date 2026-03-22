@@ -18,12 +18,17 @@ export const Paragraph = styled.p`
   width: 60%;
   margin: 24px auto 0 auto;
   color: ${({ theme }) => theme.colors.mainPallet.text};
-  opacity: 0.9;
+  opacity: 0.7;
   line-height: 1.6;
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
     width: 90%;
     line-height: 2;
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 100%;
+    font-size: 16px;
   }
 `;
 
@@ -71,6 +76,11 @@ export const SkillsTitle = styled.h4`
   position: relative;
   padding-bottom: 12px;
   width: 50%;
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    font-size: 18px;
+    width: 100%;
+  }
 `;
 
 export const SkillsList = styled.div`
@@ -173,6 +183,15 @@ export const IconBox = styled.div`
     font-size: 50px;
   }
 
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+     width: 50px;
+    height: 50px;
+    margin-bottom: 2em;
+    svg {
+      font-size: 30px;
+    }
+  }
+    
   ${({ theme }) => `
   @media (max-height: ${theme._13inchHeight}) and (max-width: 1230px) {
    width: 70px;

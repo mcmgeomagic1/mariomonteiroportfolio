@@ -25,7 +25,7 @@ export const ProjectDetailsBox = styled.section`
 
     
     @media (max-width: ${({ theme }) => theme.mobile}) {
-      font-size: 110%;
+      font-size: 16px;
     line-height: 1.4em;
     }
   }

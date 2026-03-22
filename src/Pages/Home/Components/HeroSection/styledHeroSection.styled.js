@@ -15,7 +15,7 @@ export const HeroSectionSection = styled.header`
    margin-bottom: .4em;
   }
    @media (max-width: ${({ theme }) => theme.smallerDevices}) {
-   font-size: 450%;
+   font-size: 420%;
    line-height: 125%;
    margin-bottom: .4em;
   }}
@@ -104,8 +104,10 @@ export const HeroParagraph = styled(motion.p)`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin: 0 auto 2em auto;
     width: 90%;
-    font-size: 110%;
-    line-height: 1.4em;
+    line-height: 1.8;
+    width: 100%;
+    font-size: 16px;
+
   }
 
   

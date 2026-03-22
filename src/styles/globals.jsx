@@ -165,8 +165,8 @@ const GlobalStyles = createGlobalStyle`
 		transition: all 0.3s ease;
 
 		@media (max-width: ${({ theme }) => theme.mobile}) {
-          font-size: ${({ theme }) => theme.fontSize.buttonText};
-		  height: 60px;
+          font-size: 13px;
+		  height: 50px;
 		  padding: 0px 14px;
         }
 	}

@@ -19,12 +19,10 @@ export const TrackerCircle = styled(motion.div)`
 
   transition: all 0.15s ease;
 
-  /* default glow */
   background: ${({ theme }) => theme.colors.mainPallet.primary};
 
   filter: blur(70px);
 
-  /* outline style */
   &.outline {
     width: 90px;
     height: 90px;
@@ -33,5 +31,10 @@ export const TrackerCircle = styled(motion.div)`
     border: 2px solid ${({ theme }) => theme.colors.mainPallet.standard.white};
 
     filter: blur(0);
+
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+      width: 50px;
+      height: 50px;
+    }
   }
 `;

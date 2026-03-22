@@ -19,10 +19,14 @@ export const ProjectDiv = styled.div`
   p {
     margin-bottom: 1.5em;
     @media (max-width: ${({ theme }) => theme.mobile}) {
-      margin: -1em auto 0.5em auto;
-      width: 90%;
-      font-size: 110%;
+      margin: -1.3em auto 1em auto;
+      width: 100%;
+      font-size: 16px;
     line-height: 1.4em;
+    }
+
+    @media (max-width: ${({ theme }) => theme.smallerDevices}) {
+      margin: -1em auto 0.5em auto;
     }
 
     @media (max-height: ${({ theme }) => theme._13inchHeight}) {
@@ -35,9 +39,13 @@ export const ProjectDiv = styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    grid-gap: 1em;
+    grid-gap: .5em;
     margin-top: 13em;
     text-align: center;
+  }
+
+  @media (max-width: ${({ theme }) => theme.smallerDevices}) {
+    grid-gap: 1.5em;
   }
   ${({ theme }) => `
     @media (max-height: ${theme._13inchHeight})  {
