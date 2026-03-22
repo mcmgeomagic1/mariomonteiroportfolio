@@ -35,8 +35,8 @@ export const HeroSeactionBox = styled.div`
     grid-gap: 5px;
    p {
     margin: 0 auto 1.2em auto;
-    font-size: 110%;
-    line-height: 1.4em;
+    line-height: 1.8;
+			font-size: 16px;
     }
   }
 
@@ -95,6 +95,11 @@ export const Image = styled(motion.img)`
     width: 232px;
     height: 298px;
     margin-top: 1.4em;
+  }
+
+  @media (max-width: ${({ theme }) => theme.smallerDevices}) {
+     width: 170px;
+    height: 208px;
   }
 
   ${({ theme }) => `

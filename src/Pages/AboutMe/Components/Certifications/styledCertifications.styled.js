@@ -25,6 +25,12 @@ export const Top = styled.div`
 
   p {
     width: 64%;
+
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+      width: 100%;
+      font-size: 16px;
+      line-height: 1.8;
+    }
   }
 
   @media (max-width: ${({ theme }) => theme.tablet}) {

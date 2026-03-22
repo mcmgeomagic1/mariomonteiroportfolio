@@ -14,6 +14,10 @@ export const CertificationBox = styled(motion.div)`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     height: 230px;
   }
+
+   @media (max-width: ${({ theme }) => theme.smallerDevices}) {
+    height: 240px;
+  }
 `;
 
 export const TopPart = styled.div`
@@ -29,6 +33,9 @@ export const TopPart = styled.div`
   }
   span {
     opacity: 0.7;
+     @media (max-width: ${({ theme }) => theme.mobile}) {
+      font-size: 16px;
+    }
   }
 `;
 
@@ -38,6 +45,12 @@ export const CursoTitle = styled.h4`
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     font-size: 120%;
+  }
+
+  @media (max-width: ${({ theme }) => theme.smallerDevices}) {
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: .7em;
   }
 `;
 
@@ -54,5 +67,9 @@ export const BottomPart = styled.div`
 
   img {
     width: 31px;
+  }
+
+   @media (max-width: ${({ theme }) => theme.mobile}) {
+    padding-top: 2.2em;
   }
 `;

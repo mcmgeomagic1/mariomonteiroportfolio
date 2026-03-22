@@ -31,12 +31,13 @@ const GlobalStyles = createGlobalStyle`
 	
 
 	p {
-		line-height: 170%;
+		line-height: 1.8;
 		letter-spacing: 0.5px;
 		opacity: .7;
 
         @media (max-width: ${({ theme }) => theme.mobile}) {
-			line-height: 2;
+			line-height: 1.8;
+			font-size: 16px;
 			width: 100%;
   		}
 
@@ -171,7 +172,7 @@ const GlobalStyles = createGlobalStyle`
 		@media (max-width: ${({ theme }) => theme.mobile}) {
           font-size: 13px;
 		  height: 50px;
-		  padding: 0px 14px;
+		  padding: 0px 10px;
         }
 	}
 `;
