@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Container } from "../../styles/StyledCommon.styled";
 import { Logo } from "../Logo";
 import {
@@ -12,11 +12,28 @@ import {
 
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [sticky, setSticky] = useState(false);
 
   const handleClose = () => setOpen(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const triggerHeight = window.innerHeight;
+
+      if (window.scrollY > triggerHeight) {
+        setSticky(true);
+      } else {
+        setSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <NavbarSection>
+    <NavbarSection $sticky={sticky}>
       <Container>
         <main>
           <Logo />

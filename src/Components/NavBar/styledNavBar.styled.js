@@ -2,8 +2,39 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const NavbarSection = styled.header`
-  position: relative;
+  position: ${({ $sticky }) => ($sticky ? "fixed" : "relative")};
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 100;
+
+  transition: all 0.3s ease;
+
+  background: ${({ $sticky }) =>
+    $sticky ? "rgba(8, 22, 32, 0.8)" : "transparent"};
+
+  backdrop-filter: ${({ $sticky }) =>
+    $sticky ? "blur(10px)" : "none"};
+
+  box-shadow: ${({ $sticky }) =>
+    $sticky ? "0 10px 30px rgba(0,0,0,0.2)" : "none"};
+
+ 
+  transform: ${({ $sticky }) =>
+    $sticky ? "translateY(0)" : "none"};
+
+  animation: ${({ $sticky }) =>
+    $sticky ? "slideDown .5s ease-in-out forwards" : "none"};
+
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
 `;
 
 export const Nav = styled.nav`
@@ -65,6 +96,7 @@ export const MobileMenu = styled.div`
 
 export const Overlay = styled.div`
   position: fixed;
+  height: 100vh;
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
   opacity: ${({ $open }) => ($open ? 1 : 0)};
