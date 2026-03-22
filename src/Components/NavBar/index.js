@@ -13,7 +13,7 @@ import {
 export const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [sticky, setSticky] = useState(false);
-  const [hideNav, setHideNav] = useState(false);
+  const [hideNav] = useState(false);
 
   const handleClose = () => setOpen(false);
 
@@ -21,21 +21,12 @@ export const Navbar = () => {
     const handleScroll = () => {
       const triggerHeight = window.innerHeight;
 
-      // Sticky logic
-      setSticky(window.scrollY > triggerHeight);
-
-      // Hide inside Projects section
-      const section = document.getElementById("projects");
-
-      if (!section) return;
-
-      const rect = section.getBoundingClientRect();
-
-      const isInside =
-        rect.top <= 0 && rect.bottom >= window.innerHeight;
-
-      setHideNav(isInside);
-    };
+    if (window.scrollY > triggerHeight) { 
+      setSticky(true); 
+    } else { 
+      setSticky(false); 
+    } 
+  };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);

@@ -103,7 +103,7 @@ const GlobalStyles = createGlobalStyle`
 
 	
 	}
-	}
+	
 
 	h2{
 		font-size: ${({ theme }) => theme.fontSize.Headline2};
