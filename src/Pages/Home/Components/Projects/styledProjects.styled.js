@@ -221,5 +221,5 @@ export const Slide = styled.div`
 export const ProjectsSection = styled.div`
   position: relative;
   height: ${({ slides }) => slides * 100}vh;
-  z-index: 9;
+  z-index: 600;
 `;
