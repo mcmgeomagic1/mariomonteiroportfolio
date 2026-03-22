@@ -41,7 +41,7 @@ function ProjectDetails() {
 
 
   return (
-    <Section padding="60px 0;">
+    <Section padding="60px 0;" overflowX="hidden">
       <Container>
         <ProjectDetailsBox>
           <TopInfo>

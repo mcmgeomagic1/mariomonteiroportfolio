@@ -9,6 +9,7 @@ export const Section = styled.section`
   height: ${(props) => (props.height ? props.height : "auto")};
   background: ${(props) => (props.background ? props.background : "auto")};
   text-align: ${(props) => (props.textAlign ? props.textAlign : "left")};
+  overflow-x: ${(props) => (props.overflowX ? props.overflowX : "auto")};
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     padding: 60px 0px;

@@ -26,6 +26,7 @@ export const ProjectDetailsBox = styled.section`
     
     @media (max-width: ${({ theme }) => theme.mobile}) {
       font-size: 16px;
+        
       width: 100%;
     line-height: 1.8;
     }
@@ -44,6 +45,7 @@ export const ProjectDetailsBox = styled.section`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     align-items: center;
     text-align: center;
+  
   }
 `;
 
@@ -61,7 +63,7 @@ export const ProjectTitle = styled.h2`
   -webkit-text-fill-color: transparent;
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
-    width: 90%;
+    width: 100%;
     margin: 0 auto 0.3em auto;
   }
 
@@ -71,9 +73,13 @@ export const ProjectTitle = styled.h2`
 `;
 
 export const TopInfo = styled.div`
-  grid-gap: 1em;
+  grid-gap: 0em;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: ${({ theme }) => theme.smallerDevices}) {
+    grid-gap: .2em;
+  }
 
   span {
     opacity: 0.7;
@@ -142,6 +148,10 @@ export const ImagesDiv = styled.div`
 
   img {
     border-radius: 25px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    border-radius: 12px;
   }
 `;
 

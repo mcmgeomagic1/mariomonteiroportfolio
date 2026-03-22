@@ -145,6 +145,13 @@ export const HeroGradientImage = styled.img`
     height: 502px;
   }
 
+  @media (max-width: ${({ theme }) => theme.smallerDevices}) {
+    width: 349px;
+    height: 402px;
+      top: -3%;
+      
+  }
+
   @media (max-height: ${({ theme }) => theme._13inchHeight}) {
     width: 949px;
     height: 1002px;

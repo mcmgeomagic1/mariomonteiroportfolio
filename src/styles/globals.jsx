@@ -117,6 +117,10 @@ const GlobalStyles = createGlobalStyle`
     	-webkit-text-fill-color: transparent;
     	z-index: 10;
 
+		@media (max-width: ${({ theme }) => theme.tablet}) {
+    		width: 100%;
+  		}
+
     	@media (max-width: ${({ theme }) => theme.mobile}) {
     		font-size: 260%;
 			line-height: 120%;

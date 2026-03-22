@@ -20,7 +20,7 @@ const Theme = {
   fontSize: {
     Headline1: "83px",
     Headline2: "53px",
-    Headline3: "33px",
+    Headline3: "25px",
     headline4: "23px",
     bodyLarge: "16px",
     bodySmall: "15px",
