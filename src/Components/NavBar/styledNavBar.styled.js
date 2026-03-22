@@ -19,9 +19,11 @@ export const NavbarSection = styled.header`
   box-shadow: ${({ $sticky }) =>
     $sticky ? "0 10px 30px rgba(0,0,0,0.2)" : "none"};
 
- 
-  transform: ${({ $sticky }) =>
-    $sticky ? "translateY(0)" : "none"};
+  /* 👇 THIS is the important part */
+  opacity: ${({ $hide }) => ($hide ? 0 : 1)};
+  pointer-events: ${({ $hide }) => ($hide ? "none" : "all")};
+  transform: ${({ $hide }) =>
+    $hide ? "translateY(-20px)" : "translateY(0)"};
 
   animation: ${({ $sticky }) =>
     $sticky ? "slideDown .5s ease-in-out forwards" : "none"};
@@ -30,7 +32,6 @@ export const NavbarSection = styled.header`
     0% {
       transform: translateY(-100%);
     }
-
     100% {
       transform: translateY(0);
     }
