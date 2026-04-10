@@ -84,7 +84,6 @@ export const SocialIcon = styled.a`
   height: 48px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
-  border: 1px solid ${({ theme }) => theme.colors.mainPallet.stroke};
   display: flex;
   align-items: center;
   justify-content: center;

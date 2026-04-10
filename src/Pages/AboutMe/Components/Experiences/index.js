@@ -5,7 +5,7 @@ import {
   ExperienceMainDiv,
 } from "./styledExperience.styled";
 import { MdOutlineFileDownload } from "react-icons/md";
-import resume from "../../../../Assets/mariocv16.pdf";
+import resume from "../../../../Assets/mariocv17.pdf";
 
 function Experience() {
   return (

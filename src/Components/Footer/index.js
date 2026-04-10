@@ -22,6 +22,8 @@ import {
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { useTheme } from "styled-components";
 import { Link } from "react-router-dom";
+import resumeen from "../../Assets/mariocv17.pdf";
+import resumept from "../../Assets/mariocvpt17.pdf";
 
 export const Footer = () => {
   const theme = useTheme();
@@ -108,16 +110,22 @@ export const Footer = () => {
                   <NavTitle>Download my CV</NavTitle>
                   <NavList>
                     <NavItem>
-                      <NavLink href="/cv.pdf" download>
+                      <NavLink href={resumeen} download>
                         English CV
                       </NavLink>
                     </NavItem>
                     <NavItem>
-                      <NavLink href="/cv-pt.pdf" download>
+                      <NavLink href={resumept} download>
                         Portuguese CV
                       </NavLink>
                     </NavItem>
-                    <NavItem>
+                    <NavItem
+                      style={{
+                        opacity: 0.5,
+                        cursor: "wait",
+                        pointerEvents: "none",
+                      }}
+                    >
                       <NavLink href="/cv-pt.pdf" download>
                         Chinese CV
                       </NavLink>
