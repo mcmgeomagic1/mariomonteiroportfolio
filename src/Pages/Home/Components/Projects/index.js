@@ -60,13 +60,27 @@ function Projects() {
                     {project.title}
                   </ProjectTitle>
                   <p>{project.description}</p>
-                  <Link to={`/projects/${project.id}`}>
-                    <Button
-                      type="primary"
-                      text="View project"
-                      icon={<FaArrowRightLong />}
-                    />
-                  </Link>
+                  {index === 0 ? (
+                    <a
+                      href="https://www.figma.com/design/XjzrGHvZ9HF6a8E2CrmqKw/Mario-Email---SMS-Design-Portfolio?node-id=0-1&t=ULiYvzYhf7HQvhgb-1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Button
+                        type="primary"
+                        text="View Work"
+                        icon={<FaArrowRightLong />}
+                      />
+                    </a>
+                  ) : (
+                    <Link to={`/projects/${project.id}`}>
+                      <Button
+                        type="primary"
+                        text="View project"
+                        icon={<FaArrowRightLong />}
+                      />
+                    </Link>
+                  )}
                 </ProjectDiv>
                 <ProjectImageBox
                   initial={{ opacity: 0, scale: 0.94 }}
