@@ -150,7 +150,7 @@ export const projects = [
     thumbnail: thumb5,
     cover: cover5,
     technologies: ["Figma"],
-    images: [p4img1],
+    images: [p5img1],
     palette: {
       background: "#13120C",
       primary: "#E4C99E",
