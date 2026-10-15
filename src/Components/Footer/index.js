@@ -85,6 +85,15 @@ export const Footer = () => {
                   <NavTitle>Projects</NavTitle>
                   <NavList>
                     <NavItem>
+                      <a
+                      href="https://www.figma.com/design/XjzrGHvZ9HF6a8E2CrmqKw/Mario-Email---SMS-Design-Portfolio?node-id=0-1&t=ULiYvzYhf7HQvhgb-1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Email and Popup Design
+                    </a>
+                    </NavItem>
+                    <NavItem>
                       <Link to="projects/1">Easepaycar</Link>
                     </NavItem>
                     <NavItem>

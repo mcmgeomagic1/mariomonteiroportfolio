@@ -8,7 +8,6 @@ import thumb6 from "../Assets/projects/project6/thumbnail.png";
 import thumb7 from "../Assets/projects/project7/thumbnail.png";
 
 // -------------------- COVERS --------------------
-import cover1 from "../Assets/projects/project1/cover.svg";
 import cover2 from "../Assets/projects/project2/cover.svg";
 import cover3 from "../Assets/projects/project3/cover.png";
 import cover4 from "../Assets/projects/project4/cover.png";
@@ -17,7 +16,6 @@ import cover6 from "../Assets/projects/project6/cover.png";
 import cover7 from "../Assets/projects/project7/cover.png";
 
 // -------------------- GALLERY IMAGES --------------------
-import p1img1 from "../Assets/projects/project1/image1.svg";
 import p2img1 from "../Assets/projects/project2/image1.svg";
 
 import p3img1 from "../Assets/projects/project3/image1.png";
@@ -42,23 +40,9 @@ export const projects = [
    {
     id: 1,
     title: "EMAIL & POPUP DESIGN",
-    description: "Email campaigns and high-converting popups experiences for ecommerce brands.",
+    description: "Email design and high-converting SMS popups for ecommerce brands.",
     type: "EMAIL & SMS MARKETING DESIGN",
-    about:
-      "EASEPAYCAR is a mobile application I designed to help users in Angola purchase cars through bank financing. During this project, I led the full UX design process, conducting user research, creating personas, defining user flows and task maps, and developing low- and high-fidelity prototypes to produce a testable and intuitive user experience.",
     thumbnail: thumb1,
-    cover: cover1,
-    technologies: [
-      "Figma",
-      "User Research",
-      "Prototyping",
-      "User Flows/Map",
-      "Wireframing",
-      "UI Design",
-      "Information Architecture",
-      "Design Systems",
-    ],
-    images: [p1img1],
     palette: {
       background: "#00243D",
       primary: "#3382B8",
