@@ -37,9 +37,9 @@ export const Footer = () => {
           <FooterContent>
             <FooterLeft>
               <Logo />
-              <Role>Frontend Dev & UI/UX Designer | 5+ years experience</Role>
+              <Role>Frontend Dev & UI/UX Designer · Email & SMS Design | 5+ yrs</Role>
               <Description>
-                React, Next.js, TypeScript, Figma | API integration | UX
+                Postscript, Klavio, React, Next.js, TypeScript, Figma | API integration | UX
                 research | Collaborative team player
               </Description>
               <SocialBox>

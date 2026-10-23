@@ -44,7 +44,7 @@ function AboutMeHero() {
               }}
               viewport={{ once: true }}
             >
-              Frontend Developer & UI/UX Designer with 5+ years of experience. Outside of work, I enjoy continuous learning, bodybuilding, producing and DJing music, spending time with family, and following sports from my home country, Angola.
+              Frontend Developer & UI/UX Designer with 5+ years of experience and 2 years in Email & SMS design. Off the clock: I like to do bodybuilding, producing & DJing music, family time, and watch sports related to my country.
             </HeroParagraph>
             <ButtonWrapper
               initial={{ opacity: 0 }}

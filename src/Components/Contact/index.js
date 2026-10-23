@@ -77,9 +77,7 @@ function Contact() {
         <ContactWrapper>
           <h2>Let's work together</h2>
           <Paragraph>
-            Turn ideas into fast, scalable, high-converting web experiences.
-            With 5+ years in Frontend and UI/UX, I build interfaces that drive
-            real business results.
+            Have a project in mind? Send me a message and let's make it happen.
           </Paragraph>
 
           <ContactForm onSubmit={handleFormSubmit}>

@@ -37,9 +37,7 @@ function Technologies() {
       >
         <h2>My Skills and Technologies</h2>
         <Paragraph>
-          Turn ideas into fast, scalable, high-converting web experiences. With
-          5+ years in Frontend and UI/UX, I build interfaces that drive real
-          business results.
+          I turn ideas into fast, high-converting web and ecommerce experiences. With 5+ years in Frontend & UI/UX and 2 years in email & SMS design, I build interfaces that drive real business results.
         </Paragraph>
         <SkillsBoxWrapper>
           <SkillsBox>
