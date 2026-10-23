@@ -39,7 +39,7 @@ function HeroSection() {
             }}
             viewport={{ once: true }}
           >
-            Turn ideas into fast, high-converting web and ecommerce experiences. With 5+ years in Frontend & UI/UX and 2 years in marketing, I build interfaces, SMS popups, and email marketing that drive real business results.
+            Turn ideas into fast, high-converting web and ecommerce experiences. With 5+ years in Frontend & UI/UX and 2 years in marketing, I build interfaces, SMS popups, and Email marketing that drive real business results.  
           </HeroParagraph>
           <ButtonWrapper
             initial={{ opacity: 0 }}

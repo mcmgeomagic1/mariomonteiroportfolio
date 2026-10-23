@@ -16,6 +16,7 @@ import {
 import SkillsGraph from "../../../../Assets/skillsGraph.png";
 import SkillsGraph2 from "../../../../Assets/skillsGraph2.png";
 import { LuCodesandbox } from "react-icons/lu";
+import { FaEnvelope } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
 
 function Technologies() {
@@ -37,9 +38,31 @@ function Technologies() {
       >
         <h2>My Skills and Technologies</h2>
         <Paragraph>
-          I turn ideas into fast, high-converting web and ecommerce experiences. With 5+ years in Frontend & UI/UX and 2 years in email & SMS design, I build interfaces that drive real business results.
+          I turn ideas into fast, high-converting web and ecommerce experiences. With 5+ years in Frontend & UI/UX and 2 years in Email & SMS design, I build interfaces that drive real business results.
         </Paragraph>
         <SkillsBoxWrapper>
+          <SkillsBox>
+            <IconBox>
+              <FaEnvelope />
+            </IconBox>
+            <SkillsTitle>SMS & Email Design</SkillsTitle>
+            <SkillsList>
+              <SkillsGrid>
+                <SkillItem>Figma</SkillItem>
+                <SkillItem>Table Code Base</SkillItem>
+                <SkillItem>Klaviyo</SkillItem>
+                <SkillItem>Postscript Editor</SkillItem>
+                <SkillItem>Campaigns</SkillItem>
+                <SkillItem>Automated Flows</SkillItem>
+                <SkillItem>Email Layout</SkillItem>
+                <SkillItem>CTA</SkillItem>
+                <SkillItem>Visual Hierarchy</SkillItem>
+                <SkillItem>Mobile-First Design</SkillItem>
+                <SkillItem>Gif Image</SkillItem>
+                <SkillItem>Image Slicing</SkillItem>
+              </SkillsGrid>
+            </SkillsList>
+          </SkillsBox>
           <SkillsBox>
             <IconBox>
               <LuCodesandbox />

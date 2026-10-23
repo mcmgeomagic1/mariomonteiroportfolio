@@ -34,8 +34,8 @@ export const Paragraph = styled.p`
 
 export const SkillsBoxWrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
   grid-gap: 2em;
-  height: 474px;
   width: 100%;
   margin-top: 64px;
   position: relative;
@@ -48,8 +48,8 @@ export const SkillsBoxWrapper = styled.div`
 `;
 
 export const SkillsBox = styled.div`
-  width: 100%;
-  height: 100%;
+  flex: 0 0 calc(50% - 1em);
+  min-height: 300px;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -65,8 +65,8 @@ export const SkillsBox = styled.div`
   }
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
-    height: auto;
-    min-height: 300px;
+    flex: 0 0 auto;
+    width: 100%;
   }
 `;
 
