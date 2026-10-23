@@ -17,12 +17,13 @@ import carrousel2Image1 from "../../Assets/carousell-galery/image13.png";
 import carrousel2Image2 from "../../Assets/carousell-galery/image8.png";
 import carrousel2Image3 from "../../Assets/carousell-galery/image5.png";
 import carrousel2Image4 from "../../Assets/carousell-galery/image24.png";
-import carrousel2Image5 from "../../Assets/carousell-galery/image2.png";
+import carrousel2Image5 from "../../Assets/carousell-galery/image31.png";
 import carrousel2Image6 from "../../Assets/carousell-galery/image27.png";
 import carrousel2Image7 from "../../Assets/carousell-galery/image6.png";
 import carrousel2Image8 from "../../Assets/carousell-galery/image30.png";
 import carrousel2Image9 from "../../Assets/carousell-galery/image26.png";
 import carrousel2Image10 from "../../Assets/carousell-galery/image29.png";
+import carrousel2Image11 from "../../Assets/carousell-galery/image2.png";
 
 import carrousel3Image1 from "../../Assets/carousell-galery/image7.png";
 import carrousel3Image2 from "../../Assets/carousell-galery/image14.png";
@@ -60,6 +61,7 @@ const imagesRow2 = [
   carrousel2Image8,
   carrousel2Image9,
   carrousel2Image10,
+  carrousel2Image11,
 ];
 
 const imagesRow3 = [
