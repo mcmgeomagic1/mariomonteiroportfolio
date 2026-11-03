@@ -5,36 +5,40 @@ import { CarouselBox } from "./styledCarrousell.styled";
 import carrousel1Image1 from "../../Assets/carousell-galery/image1.png";
 import carrousel1Image2 from "../../Assets/carousell-galery/image11.png";
 import carrousel1Image3 from "../../Assets/carousell-galery/image3.png";
-import carrousel1Image4 from "../../Assets/carousell-galery/image17.png";
-import carrousel1Image5 from "../../Assets/carousell-galery/image9.png";
-import carrousel1Image6 from "../../Assets/carousell-galery/image20.png";
-import carrousel1Image7 from "../../Assets/carousell-galery/image19.png";
-import carrousel1Image8 from "../../Assets/carousell-galery/image21.png";
-import carrousel1Image9 from "../../Assets/carousell-galery/image25.png";
-import carrousel1Image10 from "../../Assets/carousell-galery/image15.png";
+import carrousel1Image4 from "../../Assets/carousell-galery/image33.png";
+import carrousel1Image5 from "../../Assets/carousell-galery/image17.png";
+import carrousel1Image6 from "../../Assets/carousell-galery/image9.png";
+import carrousel1Image7 from "../../Assets/carousell-galery/image20.png";
+import carrousel1Image8 from "../../Assets/carousell-galery/image19.png";
+import carrousel1Image9 from "../../Assets/carousell-galery/image21.png";
+import carrousel1Image10 from "../../Assets/carousell-galery/image25.png";
+import carrousel1Image11 from "../../Assets/carousell-galery/image15.png";
 
 import carrousel2Image1 from "../../Assets/carousell-galery/image13.png";
-import carrousel2Image2 from "../../Assets/carousell-galery/image8.png";
-import carrousel2Image3 from "../../Assets/carousell-galery/image5.png";
-import carrousel2Image4 from "../../Assets/carousell-galery/image24.png";
-import carrousel2Image5 from "../../Assets/carousell-galery/image31.png";
-import carrousel2Image6 from "../../Assets/carousell-galery/image27.png";
-import carrousel2Image7 from "../../Assets/carousell-galery/image6.png";
-import carrousel2Image8 from "../../Assets/carousell-galery/image30.png";
-import carrousel2Image9 from "../../Assets/carousell-galery/image26.png";
-import carrousel2Image10 from "../../Assets/carousell-galery/image29.png";
-import carrousel2Image11 from "../../Assets/carousell-galery/image2.png";
+import carrousel2Image2 from "../../Assets/carousell-galery/image34.png";
+import carrousel2Image3 from "../../Assets/carousell-galery/image8.png";
+import carrousel2Image4 from "../../Assets/carousell-galery/image5.png";
+import carrousel2Image5 from "../../Assets/carousell-galery/image24.png";
+import carrousel2Image6 from "../../Assets/carousell-galery/image31.png";
+import carrousel2Image7 from "../../Assets/carousell-galery/image27.png";
+import carrousel2Image8 from "../../Assets/carousell-galery/image6.png";
+import carrousel2Image9 from "../../Assets/carousell-galery/image35.png";
+import carrousel2Image10 from "../../Assets/carousell-galery/image30.png";
+import carrousel2Image11 from "../../Assets/carousell-galery/image26.png";
+import carrousel2Image12 from "../../Assets/carousell-galery/image29.png";
+import carrousel2Image13 from "../../Assets/carousell-galery/image2.png";
 
 import carrousel3Image1 from "../../Assets/carousell-galery/image7.png";
 import carrousel3Image2 from "../../Assets/carousell-galery/image14.png";
-import carrousel3Image3 from "../../Assets/carousell-galery/image28.png";
-import carrousel3Image4 from "../../Assets/carousell-galery/image16.png";
-import carrousel3Image5 from "../../Assets/carousell-galery/image4.png";
-import carrousel3Image6 from "../../Assets/carousell-galery/image18.png";
-import carrousel3Image7 from "../../Assets/carousell-galery/image22.png";
-import carrousel3Image8 from "../../Assets/carousell-galery/image10.png";
-import carrousel3Image9 from "../../Assets/carousell-galery/image12.png";
-import carrousel3Image10 from "../../Assets/carousell-galery/image23.png";
+import carrousel3Image3 from "../../Assets/carousell-galery/image32.png";
+import carrousel3Image4 from "../../Assets/carousell-galery/image28.png";
+import carrousel3Image5 from "../../Assets/carousell-galery/image16.png";
+import carrousel3Image6 from "../../Assets/carousell-galery/image4.png";
+import carrousel3Image7 from "../../Assets/carousell-galery/image18.png";
+import carrousel3Image8 from "../../Assets/carousell-galery/image22.png";
+import carrousel3Image9 from "../../Assets/carousell-galery/image10.png";
+import carrousel3Image10 from "../../Assets/carousell-galery/image12.png";
+import carrousel3Image11 from "../../Assets/carousell-galery/image23.png";
 
 
 const imagesRow1 = [
@@ -48,6 +52,7 @@ const imagesRow1 = [
   carrousel1Image8,
   carrousel1Image9,
   carrousel1Image10,
+  carrousel1Image11,
 ];
 
 const imagesRow2 = [
@@ -62,6 +67,8 @@ const imagesRow2 = [
   carrousel2Image9,
   carrousel2Image10,
   carrousel2Image11,
+  carrousel2Image12,
+  carrousel2Image13
 ];
 
 const imagesRow3 = [
