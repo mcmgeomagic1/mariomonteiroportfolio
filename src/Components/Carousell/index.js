@@ -81,7 +81,8 @@ const imagesRow3 = [
   carrousel3Image7,
   carrousel3Image8,
   carrousel3Image9,
-  carrousel3Image10
+  carrousel3Image10,
+  carrousel3Image11,
 ];
 
 const scroll = keyframes`
